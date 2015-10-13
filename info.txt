@@ -1,0 +1,90 @@
+AKCJA
+
+Od jakiegos czasu trwa akcja budowania “twarzy” naszego gdanskiego biura w postaci strony internetowej. 
+
+
+WSPÓLNIE
+Kazdy chetny bedzie mial wplyw na ksztalt naszej strony. Akcje „blogoslawi” zalozyciel biura w Gdansku, znany sportowiec Andrzej Dostatni.
+Ponizej znajdziecie przykladowe zagadnienia, które na naszej stronie moglyby sie znalezc. Jezeli ktokolwiek ma ochote napisac cos na którys z tematów to goraco zapraszam do wspólpracy. Po prostu dajcie znac i bedziemy kombinowac. Jezeli ktos ma dobry pomysl ale nie chcialby go sam realizowac to równiez zapraszam – dobrych pomyslów nigdy za wiele. Nie jest to zadne dozywotnie zobowiazanie mozna cos zrobic, potem zniknac…i znów sie pojawic.
+
+Inicjatywa nie jest tez osadzona w prózni i bedzie sie zapewne przeplatac z innymi inicjatywami w naszym biurze takimi jak np. „Ajejczes Magazin”
+
+
+ITERACYJNIE
+Pewne ruchy juz sie wykonaly i bardzo niedlugo pierwsza odslona strony zaistnieje w Internetach ale chcemy ja ulepszac, ksztaltowac tak abysmy mogli ja czesciej aktualizowac aby byla na prawde nasza. 
+Jest to proces i nie chcemy „przestrzelic”, zatem nalezy zaczac od czegos prostego a potem to rozwijac. Przykladowo jezeli ktos chcialby opisac któras z grup pracowników w naszym biurze mozna zaczac od krótkiego opisu co dana grupa robi, ile osób, od kiedy istnieje. W kolejnych wersjach strony mozna to rozwijac, zamieszczac zdjecia, historie grupy, opisy projektów, wywiady dla prasy ;-)
+
+
+ZAGADNIENIA DO OPRACOWANIA
+
+- Zawartosc statyczna
+
+               - Informacje ogólne o IHS Inc.
+                              - co to za firma, 
+                              - czym sie zajmuje - klienci
+                              - accolades, nagrody, cytowania itp
+                              - ile ludzi total
+                              - jakie dzialy ile ludzi w róznych dzialach
+                              - rozproszenie geograficzne, gdzie biura itp
+                              - przetlumaczyc IHS Elevator Pitch na polski
+
+               - Biuro w Gdansku. 
+                              - Krótka historia (timeline rozwoju)
+                              - wladze, zarzad itp.
+                              - Dzialy - Product Development, SQA, Dzial operacji ekonomicznych, Dzial analityczny
+                                             - czym sie zajmuje
+                                             - krótka historia
+                                             - ile ludzi
+                                             - zdjecia ludzi jesli chetni pokazac
+                                             - moze dla chetnych którzy chca sie na stronie znalezc zdjecie + krótka notka o tym co robie i skad sie wzialem(wzielam)
+
+                              - lokalizacja
+                                             - mapa
+                                             - zdjecia wewn. zewn. (preferowane nastrojowe zdjecia makro na których jest cos ladnego ale nie za bardzo wiadomo co ;-)
+
+                              - sprzet
+                                             - z jakiego sprzetu korzystamy 
+                                             - mobile, sprzet Apple
+                                             - serwerownia, infrastruktura
+                                             - zdjecia
+
+                              - technologia
+                                             - timeline uzywanych technologii
+                                             - opisy co uzywamy w jakim projekcie i dlaczego i jak jest fajnie (lub niefajnie)
+
+
+                              - jak pracujemy
+                                             - dlaczego to jest fajne ze nie jestesmy Outsourcingiem                                   - 
+                                             - podejscie do projektów, kontakty z pracownikami zza granicy, BA's, wizyty, wyjazdy (jak ktos gdzies byl w fajnym miejscu firmowo to moze chce napisac co gdzie i jak plus zdjecia)
+                                             - imprezy firmowe, opis, zdjecia
+                                             - jak pracujemy bardziej szczególowo:
+                                                            - projekty, metodologia, podejscia (agile, testowanie automatyczne, analizy)
+
+                              - szkolenia
+                                             - wewnetrzne – „Nothing But .NET.”, „Akademia im. Messera”, „F# lab”, inne nie tylko IT
+                                             - zewnetrzne
+                                                            - kto byl na szkoleniu to moze napisze co gdzie i kiedy i jak bylo i o czym
+                                                            - kto byl na konferencji to moze napisze co gdzie i kiedy i jak bylo i o czym
+                              - kontakt z uczelnia
+                                             - informacja o internship
+                                             - liczba pracujacych studentow 
+                                             - pracownicy uczelni - czym sie zajmuja, jacy sa fajni, zdjecia
+
+
+                              - aktywnosc, trójmiejskie kola .NET, inne organizacje, kto sie udziela to moze cos napisze
+
+                              - Projekty i produkty - co wytworzylismy w Gdansku
+                                             - materialy reklamowe z centrali
+                                             - cos z IHS.COM
+                                             - mobilne aplikacje iOS
+                                             - Android
+                                             - ciekawe R&D
+
+                              - Sustainability
+                                             - jakie inicjatywy, co gdzie kiedy, zdjecia
+                                             - skad dojezdzamy i czym!
+
+- Kontent dynamiczny
+               - wydarzenia
+               - speaker corner
+               - more TBD
