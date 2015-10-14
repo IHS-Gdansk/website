@@ -1,0 +1,115 @@
+#ciekawostki  {
+	background:#222;
+    padding: 100px 0 70px;
+    color: #fff;
+}
+
+#ciekawostki h1,
+#ciekawostki h2,
+#ciekawostki h3,
+#ciekawostki h4 {
+	color:#fff;
+}
+
+#ciekawostki  strong {
+    display: block;
+    margin-bottom: 30px;
+}
+
+#ciekawostki .row .ciekawostki-item  {
+	padding: 0;
+	height: 500px;
+	overflow: hidden;
+	position: relative;
+	cursor:pointer;
+	border-bottom: 3px solid rgba(0,0,0,.8);
+	-webkit-transition: border-color 1s; 
+    transition: border-color 1s;
+}
+
+#ciekawostki .row .ciekawostki-item:hover {
+	border-color: #44a8ce;
+}
+
+#ciekawostki .row .ciekawostki-item  img {
+	min-height: 500px;
+	width: 100%;
+}
+
+#ciekawostki .row .ciekawostki-item h2 {
+    margin-bottom: 20px;
+    text-align: center;
+    font-weight: 200;
+}
+
+#ciekawostki .row .ciekawostki-caption  {
+    position: absolute;
+    left: 0;
+    bottom: -430px;
+    padding: 0 10%;
+    background: rgba(0,0,0,.75);
+    height: 100%;
+	-webkit-transition: all 2s; 
+    transition: all 2s;
+
+}
+
+#ciekawostki .row .ciekawostki-item:hover  .ciekawostki-caption {
+	bottom: -250px;
+	background: rgba(0,0,0,.85);
+}
+
+#ciekawostki .carousel-control.left,
+#ciekawostki .carousel-control.right {
+    position: absolute;
+    top: 50%;
+    background-color: rgba(0,0,0,0.2);
+    color: #fff;
+    font-size: 30px;
+    display: inline-block;
+    margin-top: -35px;
+    height: 70px;
+    width: 70px;
+    line-height: 70px;
+    text-align: center;
+    border-radius: 100px;
+    z-index: 5;
+    -webkit-transition: background-color 400ms;
+    transition: background-color 400ms;
+}
+
+#ciekawostki .carousel-control.left:hover, 
+#ciekawostki .carousel-control.right:hover {
+    background-color: #45aed6;
+}
+
+#ciekawostki .carousel-control.left {
+    left: -35px;
+    text-indent: 14px;
+}
+
+#ciekawostki .carousel-control.right {
+    right: -35px;
+    text-indent: -14px;
+}
+
+#ciekawostki .carousel-indicators {
+    bottom: -50px;
+}
+
+
+
+@media (max-width: 1200px) {
+	#ciekawostki .row .ciekawostki-caption  {
+		background: rgba(50,83,255,.75);
+	}
+}
+
+@media (max-width: 970px) {
+	#ciekawostki .row .ciekawostki-caption  {
+		background: rgba(250,83,55,.75);
+	}
+}
+
+
+
