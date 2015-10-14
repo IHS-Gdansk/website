@@ -1,1 +1,1 @@
-# IHS Gdansk website
+# IHS Gdańsk website
