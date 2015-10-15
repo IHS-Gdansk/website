@@ -3,6 +3,7 @@ $blue_color: #00a9cb;
 $orange_color: #f7941d;
 $green_color: #96bc33;
 $red_color: #f04e23;
+$dark_color: #20222e;
 
 
 /*-----------------------------------------------------------------------------
@@ -24,11 +25,40 @@ $red_color: #f04e23;
     border-bottom: 1px solid #ebebeb;
 }
 
+//Services
+#news, #ihs, #narzedzia, #kontakt, #produkty {
+  padding: 100px 0 75px;
+}
+
+
+/*-----------------------------------------------------------------------------
+------------------------------ SLIDER ---------------------------------------*/
+
+#slider {
+    width: 100%;
+    background: url(../images/slider/pizza.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-y: -338px;
+    height: 500px;
+    position:relative;
+
+    .slider-mask {
+        background: $dark_color;
+        width: 100%;
+        height:100%;
+        margin:0;
+        padding:0;
+        opacity:.3;
+    }
+}
+
+
 /*-----------------------------------------------------------------------------
 ----------------------------- CIEKAWOSTKI ------------------------------------*/
 
 #ciekawostki {
-  background: #20222e;
+  background: $dark_color;
   padding: 100px 0 70px;
   color: #fff;
   position: relative;
@@ -49,7 +79,7 @@ $red_color: #f04e23;
       -webkit-transition: border-color 1s;
       transition: border-color 1s;
       &:hover {
-        border-color: #44a8ce;
+        border-color: $blue_color;
       }
       img {
         min-height: 500px;
@@ -169,6 +199,9 @@ $red_color: #f04e23;
 	    .fa {
 		    margin-right:10px;
 	    }
+    }
+    .photo-wrapper {
+        margin-top: -15px;
     }
 }
 .gift-wrapper {

@@ -166,6 +166,9 @@ ul.nostyle i {
   border-radius: 0;
   margin-bottom: 0;
 }
+.navbar.navbar-default .navbar-nav > li > a {
+  color: #444;
+}
 .navbar.navbar-default .navbar-toggle {
   margin-top: 32px;
 }
