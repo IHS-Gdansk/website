@@ -1,0 +1,194 @@
+
+$blue_color: #00a9cb;
+$orange_color: #f7941d;
+$green_color: #96bc33;
+$red_color: #f04e23;
+
+
+/*-----------------------------------------------------------------------------
+----------------------------- GLOBAL ------------------------------------*/
+
+.blue-section {
+	background: $blue_color;
+    color: #fff;
+      h1, h2, h3, h4 {
+    color: #fff;
+  }
+}
+
+.white-section {
+    padding: 50px 0;
+    text-align: center;
+    font-weight: 400;
+    font-size: 18px;
+    border-bottom: 1px solid #ebebeb;
+}
+
+/*-----------------------------------------------------------------------------
+----------------------------- CIEKAWOSTKI ------------------------------------*/
+
+#ciekawostki {
+  background: #20222e;
+  padding: 100px 0 70px;
+  color: #fff;
+  position: relative;
+  h1, h2, h3, h4 {
+    color: #fff;
+  }
+  strong {
+    display: block;
+    margin-bottom: 30px;
+  }
+  .row {
+    .ciekawostki-item {
+      padding: 0;
+      height: 500px;
+      overflow: hidden;
+      position: relative;
+      border-bottom: 3px solid transparent;
+      -webkit-transition: border-color 1s;
+      transition: border-color 1s;
+      &:hover {
+        border-color: #44a8ce;
+      }
+      img {
+        min-height: 500px;
+        width: 100%;
+      }
+    }
+    .ciekawostki-caption {
+      position: absolute;
+      left: 0;
+      bottom: -420px;
+      padding: 0 10%;
+      background: rgba(32, 34, 46, 0.8);
+      height: 100%;
+      -webkit-transition: all 2s;
+      transition: all 2s;
+      h2 {
+        margin-bottom: 15px;
+        text-align: center;
+        font-weight: 400;
+        font-size: 22px;
+      }
+      p {
+        line-height: 18px;
+        font-size: 16px;
+        font-weight: 200;
+        visibility: hidden;
+      }
+    }
+    .ciekawostki-item:hover .ciekawostki-caption {
+      bottom: 0px;
+      background: rgba(32, 34, 46, 0.9);
+      p {
+        visibility: visible;
+      }
+    }
+  }
+  .carousel-control {
+    &.left, &.right {
+      position: absolute;
+      top: 50%;
+      background-color: rgba(0, 0, 0, 0.2);
+      color: #fff;
+      font-size: 30px;
+      display: inline-block;
+      margin-top: -35px;
+      height: 70px;
+      width: 70px;
+      line-height: 70px;
+      text-align: center;
+      border-radius: 100px;
+      z-index: 5;
+      -webkit-transition: background-color 400ms;
+      transition: background-color 400ms;
+    }
+    &.left:hover, &.right:hover {
+      background-color: $blue_color;
+    }
+    &.left {
+      left: -35px;
+      text-indent: 14px;
+    }
+    &.right {
+      right: -35px;
+      text-indent: -14px;
+    }
+  }
+  .carousel-indicators {
+    bottom: -50px;
+  }
+}
+
+@media (max-width: 1200px) {
+  #ciekawostki .row {
+    .ciekawostki-item {
+      height: 400px;
+      img {
+        min-height: 450px;
+      }
+    }
+    .ciekawostki-caption {
+      bottom: -330px;
+      h2 {
+        font-size: 20px;
+      }
+    }
+    .ciekawostki-item:hover .ciekawostki-caption {
+      background: rgba(0, 0, 0, 0.85);
+    }
+  }
+}
+
+@media (max-width: 970px) {
+  #ciekawostki .row {
+    .ciekawostki-item {
+      height: 350px;
+      img {
+        min-height: 350px;
+      }
+    }
+    .ciekawostki-caption {
+      bottom: -280px;
+    }
+  }
+}
+
+
+/*-----------------------------------------------------------------------------
+----------------------------- KARIERA ---------------------------------------*/
+
+#kariera {
+	padding: 100px 0 75px;
+	.row {
+		margin-bottom: 40px;
+	}
+    
+    h4  {
+	    .fa {
+		    margin-right:10px;
+	    }
+    }
+}
+.gift-wrapper {
+    position:relative;
+    height: 320px;
+    .gift-image {
+        position: absolute;
+        top: 35%;
+        left: 40%;
+        font-size: 100px;
+    }
+}
+@media (max-width: 770px) {
+    .gift-wrapper {
+        height: 200px;
+        .gift-image {
+            position: absolute;
+            top: 35%;
+            left: 40%;
+            font-size: 100px;
+        }
+    }
+}

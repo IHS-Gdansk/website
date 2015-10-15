@@ -11,7 +11,7 @@ Author URL: http://shapebootstrap.net
 *******Typography******
 **************************/
 
-@major_color: #45aed6;
+@major_color: #00a9cb;
 @text_color: #64686d;
 
 body {
@@ -46,7 +46,7 @@ a {
   &:hover,
   &:focus {
     text-decoration: none;
-    color: darken(@major_color, 10%);
+    color: darken(@major_color, 15%);
      outline: none;
   }
 
@@ -109,16 +109,19 @@ hr {
 }
 
 .btn {
-  border-width: 0;
-  border-bottom-width: 3px;
-  border-radius: 3px;
+  border: none;
+
   &.btn-primary {
     background: @major_color;
-    border-color: darken(@major_color, 10%);
     &:hover,
     &:focus{
-      background: darken(@major_color, 10%);
+      background: darken(@major_color, 15%);
     }
+  }
+  &.btn-lg {
+      text-transform: uppercase;
+      font-weight: 200;
+      font-size:30px;
   }
 }
 
