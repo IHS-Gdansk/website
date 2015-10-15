@@ -14,6 +14,25 @@
   border-bottom: 1px solid #ebebeb; }
 
 /*-----------------------------------------------------------------------------
+------------------------------ SLIDER ---------------------------------------*/
+#slider {
+  width: 100%;
+  background: url(../images/slider/pizza.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position-y: -338px;
+  height: 500px;
+  margin-bottom: 50px;
+  position: relative; }
+  #slider .slider-mask {
+    background: #20222e;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    opacity: .3; }
+
+/*-----------------------------------------------------------------------------
 ----------------------------- CIEKAWOSTKI ------------------------------------*/
 #ciekawostki {
   background: #20222e;
@@ -115,6 +134,8 @@
     margin-bottom: 40px; }
   #kariera h4 .fa {
     margin-right: 10px; }
+  #kariera .photo-wrapper {
+    margin-top: -15px; }
 
 .gift-wrapper {
   position: relative;

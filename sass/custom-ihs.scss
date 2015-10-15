@@ -3,6 +3,7 @@ $blue_color: #00a9cb;
 $orange_color: #f7941d;
 $green_color: #96bc33;
 $red_color: #f04e23;
+$dark_color: #20222e;
 
 
 /*-----------------------------------------------------------------------------
@@ -23,6 +24,31 @@ $red_color: #f04e23;
     font-size: 18px;
     border-bottom: 1px solid #ebebeb;
 }
+
+
+/*-----------------------------------------------------------------------------
+------------------------------ SLIDER ---------------------------------------*/
+
+#slider {
+    width: 100%;
+    background: url(../images/slider/pizza.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-y: -338px;
+    height: 500px;
+    margin-bottom: 50px;
+    position:relative;
+
+    .slider-mask {
+        background: $dark_color;
+        width: 100%;
+        height:100%;
+        margin:0;
+        padding:0;
+        opacity:.3;
+    }
+}
+
 
 /*-----------------------------------------------------------------------------
 ----------------------------- CIEKAWOSTKI ------------------------------------*/
@@ -169,6 +195,9 @@ $red_color: #f04e23;
 	    .fa {
 		    margin-right:10px;
 	    }
+    }
+    .photo-wrapper {
+        margin-top: -15px;
     }
 }
 .gift-wrapper {
