@@ -25,6 +25,11 @@ $dark_color: #20222e;
     border-bottom: 1px solid #ebebeb;
 }
 
+//Services
+#news, #ihs, #narzedzia, #kontakt, #produkty {
+  padding: 100px 0 75px;
+}
+
 
 /*-----------------------------------------------------------------------------
 ------------------------------ SLIDER ---------------------------------------*/
@@ -36,7 +41,6 @@ $dark_color: #20222e;
     background-repeat: no-repeat;
     background-position-y: -338px;
     height: 500px;
-    margin-bottom: 50px;
     position:relative;
 
     .slider-mask {
@@ -54,7 +58,7 @@ $dark_color: #20222e;
 ----------------------------- CIEKAWOSTKI ------------------------------------*/
 
 #ciekawostki {
-  background: #20222e;
+  background: $dark_color;
   padding: 100px 0 70px;
   color: #fff;
   position: relative;
@@ -75,7 +79,7 @@ $dark_color: #20222e;
       -webkit-transition: border-color 1s;
       transition: border-color 1s;
       &:hover {
-        border-color: #44a8ce;
+        border-color: $blue_color;
       }
       img {
         min-height: 500px;

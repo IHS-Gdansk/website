@@ -13,6 +13,9 @@
   font-size: 18px;
   border-bottom: 1px solid #ebebeb; }
 
+#news, #ihs, #narzedzia, #kontakt, #produkty {
+  padding: 100px 0 75px; }
+
 /*-----------------------------------------------------------------------------
 ------------------------------ SLIDER ---------------------------------------*/
 #slider {
@@ -22,7 +25,6 @@
   background-repeat: no-repeat;
   background-position-y: -338px;
   height: 500px;
-  margin-bottom: 50px;
   position: relative; }
   #slider .slider-mask {
     background: #20222e;
@@ -53,7 +55,7 @@
     -webkit-transition: border-color 1s;
     transition: border-color 1s; }
     #ciekawostki .row .ciekawostki-item:hover {
-      border-color: #44a8ce; }
+      border-color: #00a9cb; }
     #ciekawostki .row .ciekawostki-item img {
       min-height: 500px;
       width: 100%; }
