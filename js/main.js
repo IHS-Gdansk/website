@@ -183,6 +183,9 @@ jQuery(function($) {'use strict';
 			center: myLatlng
 		};
 		var map = new google.maps.Map(document.getElementById('google-map'), mapOptions);
+		map.addListener('bounds_changed', function () {
+			map.setCenter(myLatlng);
+		});
 		var marker = new google.maps.Marker({
 			position: myLatlng,
 			map: map
