@@ -177,6 +177,9 @@ jQuery(function($) {'use strict';
 		var mapOptions = {
 			zoom: 14,
 			scrollwheel: false,
+			zoomControl: false,
+			streetViewControl: false,
+			mapTypeControl: false,
 			center: myLatlng
 		};
 		var map = new google.maps.Map(document.getElementById('google-map'), mapOptions);
