@@ -26,16 +26,19 @@
 .xxx {
   background: #ffffff;
   /* Old browsers */
+  background: -moz-linear-gradient(left, #ffffff 0%, #ffffff 50%, #ffffff 50%, #000000 50%, #000000 100%);
   /* FF3.6+ */
   background: -webkit-gradient(linear, left top, right top, color-stop(0%, #ffffff), color-stop(50%, #ffffff), color-stop(50%, #ffffff), color-stop(50%, #000000), color-stop(100%, #000000));
   /* Chrome,Safari4+ */
   background: -webkit-linear-gradient(left, #ffffff 0%, #ffffff 50%, #ffffff 50%, #000000 50%, #000000 100%);
   /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(left, #ffffff 0%, #ffffff 50%, #ffffff 50%, #000000 50%, #000000 100%);
   /* Opera 11.10+ */
+  background: -ms-linear-gradient(left, #ffffff 0%, #ffffff 50%, #ffffff 50%, #000000 50%, #000000 100%);
   /* IE10+ */
   background: linear-gradient(to right, #ffffff 0%, #ffffff 50%, #ffffff 50%, #000000 50%, #000000 100%);
   /* W3C */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#000000',GradientType=1 )
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#000000',GradientType=1 );
   /* IE6-9 */ }
 
 /*-----------------------------------------------------------------------------
@@ -97,15 +100,44 @@
 
 /*-----------------------------------------------------------------------------
 -------------------------------- PROCES---------------------------------------*/
-#work-process .well-wrapper {
-  margin-top: 30px; }
-#work-process .well {
-  background-color: transparent;
-  border: none;
-  min-height: 20px;
-  padding: 10px 20px; }
-  #work-process .well h3 {
-    color: #00a9cb; }
+#proces {
+  padding: 100px 0 50px;
+  background: #20222e url(../images/work-process/bg.jpg) no-repeat 0 0;
+  background-size: cover;
+  color: #fff; }
+  #proces h2 {
+    color: #fff; }
+  #proces h3 {
+    color: #fff;
+    margin-bottom: 10px; }
+  #proces .icon-circle {
+    display: inline-block;
+    width: 80px;
+    height: 80px;
+    line-height: 80px;
+    border: 2px solid #00a9cb;
+    border-radius: 100px;
+    position: relative; }
+    #proces .icon-circle > span {
+      border-style: solid;
+      border-width: 2px;
+      border-color: #00a9cb;
+      border-radius: 50%;
+      background-color: #fff;
+      position: absolute;
+      width: 24px;
+      height: 24px;
+      line-height: 20px;
+      top: -12px; }
+  #proces .well-wrapper {
+    margin-top: 30px; }
+  #proces .well {
+    background-color: transparent;
+    border: none;
+    min-height: 20px;
+    padding: 10px 20px; }
+    #proces .well h3 {
+      color: #00a9cb; }
 
 /*-----------------------------------------------------------------------------
 ----------------------------- CIEKAWOSTKI ------------------------------------*/
@@ -229,6 +261,8 @@
   padding: 30px 0px;
   margin: 10px;
   color: #FFF;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
   border-radius: 3px;
   text-align: center; }
 
@@ -242,3 +276,5 @@
   -ms-user-select: none;
   user-select: none;
   -webkit-tap-highlight-color: transparent; }
+
+/*# sourceMappingURL=custom-ihs.css.map */
