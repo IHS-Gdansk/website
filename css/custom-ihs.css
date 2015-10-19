@@ -1,5 +1,4 @@
-/*-----------------------------------------------------------------------------
------------------------------ GLOBAL ------------------------------------*/
+/*----------------------------- GLOBAL ------------------------------------*/
 .blue-section {
   background: #00a9cb;
   color: #fff; }
@@ -243,5 +242,3 @@
   -ms-user-select: none;
   user-select: none;
   -webkit-tap-highlight-color: transparent; }
-
-/*# sourceMappingURL=custom-ihs.css.map */
