@@ -47,7 +47,6 @@
 <!--/head-->
 
 <body id="home" class="homepage">
-
     <header id="header">
         <nav id="main-menu" class="navbar navbar-default navbar-fixed-top" role="banner">
             <div class="container">
@@ -58,20 +57,20 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand" href="index.html">
+                    <a class="navbar-brand" href="/">
                         <img src="images/ihs-logo-brand.png" alt="IHS logo">
                     </a>
                 </div>
 
                 <div class="collapse navbar-collapse navbar-right">
                     <ul class="nav navbar-nav">
-                        <li class=" scroll"><a href="#ihs">IHS Global</a></li>
-                        <li class=" scroll"><a href="#produkty">Produkty</a></li>
-                        <li class=" scroll"><a href="#kariera">Kariera</a></li>
-                        <li class=" scroll"><a href="#news">Aktualności</a></li>
-                        <li class=" scroll"><a href="#ciekawostki">Ciekawostki</a></li>
-                        <li class=" scroll"><a href="#narzedzia">Narzędzia</a></li>
-                        <li class=" scroll"><a href="#kontakt">Kontakt</a></li>
+                        <li class="slowscroll scroll"><a href="#ihs">IHS Global</a></li>
+                        <li class="slowscroll scroll"><a href="#produkty">Produkty</a></li>
+                        <li class="slowscroll scroll"><a href="#kariera">Kariera</a></li>
+                        <li class="slowscroll scroll"><a href="#news">Aktualności</a></li>
+                        <li class="slowscroll scroll"><a href="#ciekawostki">Ciekawostki</a></li>
+                        <li class="slowscroll scroll"><a href="#narzedzia">Narzędzia</a></li>
+                        <li class="slowscroll scroll"><a href="#kontakt">Kontakt</a></li>
                     </ul>
                 </div>
             </div>
@@ -90,7 +89,6 @@
         </div>
     </section>
     <!--/#main-slider-->
-
 
     <section id="ihs">
         <div class="container">
@@ -683,7 +681,7 @@
             <h2 class="section-title text-center">Ciekawostki</h2>
             <p class="text-center wow fadeInDown"></p>
         </div>
-        <div id="owl-demo" class="owl-carousel owl-theme wow fadeInUp">
+        <div id="owl-ciekawostki" class="owl-carousel owl-theme wow fadeInUp">
             <div class="item">
                 <img src="images/ciekawostki/18.jpg" class="img-responsive" alt="Responsive image">
                 <h3>Sprzątamy Las</h3>
@@ -1540,116 +1538,16 @@
 
     <script src="js/jquery.js"></script>
     <script src="js/bootstrap.min.js"></script>
-    <script src="http://maps.google.com/maps/api/js?sensor=true"></script>
     <script src="js/owl.carousel.min.js"></script>
-    <script src="js/karuzela.js"></script>
     <!-- <script src="js/jquery.prettyPhoto.js"></script> -->
     <!--  ex.Counters  -->
     <script src="js/jquery.inview.min.js"></script>
     <!--  Animations-->
     <script src="js/wow.min.js"></script>
     <script src="js/main.js"></script>
-
-
-    <script src="js/jquery.fittext.js"></script>
+    <!-- <script src="js/jquery.fittext.js"></script> -->
     <script src="js/jquery.lettering.js"></script>
     <script src="jquery.textillate.js"></script>
-    <script>hljs.initHighlightingOnLoad();</script>
-    <script>
-        $(function () {
-            var log = function (msg) {
-                return function () {
-                    if (console) console.log(msg);
-                }
-            }
-            $('code').each(function () {
-                var $this = $(this);
-                $this.text($this.html());
-            })
-
-            var animateClasses = 'flash bounce shake tada swing wobble pulse flip flipInX flipOutX flipInY flipOutY fadeIn fadeInUp fadeInDown fadeInLeft fadeInRight fadeInUpBig fadeInDownBig fadeInLeftBig fadeInRightBig fadeOut fadeOutUp fadeOutDown fadeOutLeft fadeOutRight fadeOutUpBig fadeOutDownBig fadeOutLeftBig fadeOutRightBig bounceIn bounceInDown bounceInUp bounceInLeft bounceInRight bounceOut bounceOutDown bounceOutUp bounceOutLeft bounceOutRight rotateIn rotateInDownLeft rotateInDownRight rotateInUpLeft rotateInUpRight rotateOut rotateOutDownLeft rotateOutDownRight rotateOutUpLeft rotateOutUpRight hinge rollIn rollOut';
-
-            var $form = $('.playground form')
-              , $viewport = $('.playground .viewport');
-
-            var getFormData = function () {
-                var data = {
-                    loop: true,
-                    in: { callback: log('in callback called.') },
-                    out: { callback: log('out callback called.') }
-                };
-
-                $form.find('[data-key="effect"]').each(function () {
-                    var $this = $(this)
-                      , key = $this.data('key')
-                      , type = $this.data('type');
-
-                    data[type][key] = $this.val();
-                });
-
-                $form.find('[data-key="type"]').each(function () {
-                    var $this = $(this)
-                      , key = $this.data('key')
-                      , type = $this.data('type')
-                      , val = $this.val();
-
-                    data[type].shuffle = (val === 'shuffle');
-                    data[type].reverse = (val === 'reverse');
-                    data[type].sync = (val === 'sync');
-                });
-
-                return data;
-            };
-
-            $.each(animateClasses.split(' '), function (i, value) {
-                var type = '[data-type]'
-                  , option = '<option value="' + value + '">' + value + '</option>';
-
-                if (/Out/.test(value) || value === 'hinge') {
-                    type = '[data-type="out"]';
-                } else if (/In/.test(value)) {
-                    type = '[data-type="in"]';
-                }
-
-                if (type) {
-                    $form.find('[data-key="effect"]' + type).append(option);
-                }
-            });
-
-            $form.find('[data-key="effect"][data-type="in"]').val('fadeInLeftBig');
-            $form.find('[data-key="effect"][data-type="out"]').val('hinge');
-
-            $('.jumbotron h1')
-              .textillate({ in: { effect: 'flipInY' } });
-
-            $('.jumbotron p')
-              .textillate({ initialDelay: 1000, in: { delay: 1, shuffle: true } });
-
-            setTimeout(function () {
-                $('.fade').addClass('in');
-            }, 250);
-
-            setTimeout(function () {
-                $('h1.glow').removeClass('in');
-            }, 2000);
-
-            var $tlt = $viewport.find('.tlt')
-              .on('start.tlt', log('start.tlt triggered.'))
-              .on('inAnimationBegin.tlt', log('inAnimationBegin.tlt triggered.'))
-              .on('inAnimationEnd.tlt', log('inAnimationEnd.tlt triggered.'))
-              .on('outAnimationBegin.tlt', log('outAnimationBegin.tlt triggered.'))
-              .on('outAnimationEnd.tlt', log('outAnimationEnd.tlt triggered.'))
-              .on('end.tlt', log('end.tlt'));
-
-            $form.on('change', function () {
-                var obj = getFormData();
-                $tlt.textillate(obj);
-            }).trigger('change');
-
-        });
-
-    </script>
-
     <script>
         (function (i, s, o, g, r, a, m) {
             i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
@@ -1661,6 +1559,6 @@
         ga('create', 'UA-68820410-1', 'auto');
         ga('send', 'pageview');
     </script>
+    <script src="http://maps.google.com/maps/api/js?sensor=true"></script>
 </body>
-
 </html>

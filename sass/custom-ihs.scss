@@ -5,9 +5,7 @@ $green_color: #96bc33;
 $red_color: #f04e23;
 $dark_color: #20222e;
 
-
-/*-----------------------------------------------------------------------------
------------------------------ GLOBAL ------------------------------------*/
+/*----------------------------- GLOBAL ------------------------------------*/
 
 .blue-section {
 	background: $blue_color;
@@ -234,7 +232,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
 	.row {
 		margin-bottom: 40px;
 	}
-    
+
     h4  {
 	    .fa {
 		    margin-right:10px;
@@ -321,7 +319,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
 ----------------------------- KARUZELA ---------------------------------------*/
 
 
-#owl-demo .item{
+#owl-ciekawostki .item{
   padding: 30px 0px;
   margin: 10px;
   color: #FFF;
