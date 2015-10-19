@@ -6,21 +6,23 @@ jQuery(function($) {'use strict';
 	});
 
 
-	$('.slowscroll a').on('click', function() {
-		$('html').animate({scrollTop: $(this.hash).offset().top - 5}, 1000);
+	$('.slowscroll a').on('click', function(e) {
+		e.preventDefault();
+		$('html, body').animate({scrollTop: $(this.hash).offset().top - 5}, 1000);
 		return false;
 	});
 
 	// User define function
 	function Scroll() {
-		var contentTop      =   [];
+		var contentTop   =   [];
 		var contentBottom   =   [];
 		var winTop      =   $(window).scrollTop();
 		var rangeTop    =   200;
 		var rangeBottom =   500;
 		$('.navbar-collapse').find('.scroll a').each(function(){
-			contentTop.push( $( $(this).attr('href') ).offset().top);
-			contentBottom.push( $( $(this).attr('href') ).offset().top + $( $(this).attr('href') ).height() );
+			var offTop = $( $(this).attr('href') ).offset().top;
+			contentTop.push(offTop);
+			contentBottom.push(offTop + $( $(this).attr('href') ).height() );
 		})
 		$.each( contentTop, function(i){
 			if ( winTop > contentTop[i] - rangeTop ){
@@ -169,6 +171,51 @@ jQuery(function($) {'use strict';
 			}
 		});
 	});
+
+
+	var owl = $("#owl-ciekawostki");
+
+    owl.owlCarousel({
+        items : 4, //10 items above 1000px browser width
+  	  itemsDesktop : [1400,3], //5 items between 1000px and 901px
+        itemsDesktopMedium : [1000,2], //5 items between 1000px and 901px
+        itemsDesktopSmall : [900,1], // betweem 900px and 601px
+        itemsTablet: [600,1], //2 items between 600 and 0
+        itemsMobile : false // itemsMobile disabled - inherit from itemsTablet option
+    });
+
+    // Custom Navigation Events
+    $(".next").click(function(){
+      owl.trigger('owl.next');
+    })
+    $(".prev").click(function(){
+      owl.trigger('owl.prev');
+    })
+    $(".play").click(function(){
+      owl.trigger('owl.play',1000); //owl.play event accept autoPlay speed as second parameter
+    })
+    $(".stop").click(function(){
+      owl.trigger('owl.stop');
+    })
+
+
+
+	$('.jumbotron h1')
+	  .textillate({ in: { effect: 'flipInY' } });
+
+	$('.jumbotron p')
+	  .textillate({ initialDelay: 1000, in: { delay: 1, shuffle: true } });
+
+	setTimeout(function () {
+		$('.fade').addClass('in');
+	}, 250);
+
+	setTimeout(function () {
+		$('h1.glow').removeClass('in');
+	}, 2000);
+
+
+
 	//Google Map
 	var latitude = $('#google-map').data('latitude');
 	var longitude = $('#google-map').data('longitude');
