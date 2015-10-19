@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="">    
+    <meta name="description" content="">
     <meta name="keywords" content="IHS Global oprogramowanie komputerowe it praca">
     <title>IHS Global</title>
     <!-- core CSS -->
@@ -238,6 +238,8 @@
         </div>
         <!--/.container-->
     </section>
+    
+
     <!--/#services-->
 
     <section id="work-process">
@@ -250,7 +252,7 @@
             <div class="row text-center">
                 <div class="col-md-2 col-md-4 col-xs-6">
                     <div class="wow fadeInUp" data-wow-duration="400ms" data-wow-delay="0ms">
-                        <a class="icon-circle" href="#" data-toggle="modal" data-target="#meetModal">
+                        <a class="icon-circle" href="#meetModal" data-toggle="collapse" aria-expanded="false" aria-controls="meetModal">
                             <!-- <span>1</span> -->
                             <i class="fa fa-coffee fa-2x"></i>
                         </a>
@@ -259,7 +261,7 @@
                 </div>
                 <div class="col-md-2 col-md-4 col-xs-6">
                     <div class="wow fadeInUp" data-wow-duration="400ms" data-wow-delay="100ms">
-                        <a class="icon-circle" href="#" data-toggle="modal" data-target="#planModal">
+                        <a class="icon-circle" href="#planModal" data-toggle="collapse" aria-expanded="false" aria-controls="planModal">
                             <!-- <span>2</span> -->
                             <i class="fa fa-bullhorn fa-2x"></i>
                         </a>
@@ -268,7 +270,7 @@
                 </div>
                 <div class="col-md-2 col-md-4 col-xs-6">
                     <div class="wow fadeInUp" data-wow-duration="400ms" data-wow-delay="200ms">
-                        <a class="icon-circle" href="#" data-toggle="modal" data-target="#designModal">
+                        <a class="icon-circle" href="#designModal" data-toggle="collapse" aria-expanded="false" aria-controls="designModal">
                             <!-- <span>3</span> -->
                             <i class="fa fa-image fa-2x"></i>
                         </a>
@@ -277,7 +279,7 @@
                 </div>
                 <div class="col-md-2 col-md-4 col-xs-6">
                     <div class="wow fadeInUp" data-wow-duration="400ms" data-wow-delay="300ms">
-                        <a class="icon-circle" href="#" data-toggle="modal" data-target="#developModal">
+                        <a class="icon-circle" href="#developModal" data-toggle="collapse" aria-expanded="false" aria-controls="developModal">
                             <!-- <span>4</span> -->
                             <i class="fa fa-heart fa-2x"></i>
                         </a>
@@ -286,7 +288,7 @@
                 </div>
                 <div class="col-md-2 col-md-4 col-xs-6">
                     <div class="wow fadeInUp" data-wow-duration="400ms" data-wow-delay="400ms">
-                        <a class="icon-circle" href="#" data-toggle="modal" data-target="#testModal">
+                        <a class="icon-circle" href="#testModal" data-toggle="collapse" aria-expanded="false" aria-controls="testModal">
                             <!-- <span>5</span> -->
                             <i class="fa fa-shopping-cart fa-2x"></i>
                         </a>
@@ -295,11 +297,57 @@
                 </div>
                 <div class="col-md-2 col-md-4 col-xs-6">
                     <div class="wow fadeInUp" data-wow-duration="400ms" data-wow-delay="500ms">
-                        <a class="icon-circle" href="#" data-toggle="modal" data-target="#launchModal">
+                        <a class="icon-circle" href="#launchModal" data-toggle="collapse" aria-expanded="false" aria-controls="launchModal">
                             <!-- <span>6</span> -->
                             <i class="fa fa-space-shuttle fa-2x"></i>
                         </a>
                         <h3>LAUNCH</h3>
+                    </div>
+                </div>
+                <div class="col-md-12 col-md-12 col-xs-12 well-wrapper">
+                    <div class="collapse" id="meetModal">
+                        <div class="well">
+                            <h3>MEET</h3>
+                            Pomysł na nowy produkt, nowe wydanie istniejącego produktu to moment kiedy trzeba dużo rozmawiać. Spotkania w jednej lokacji z&nbsp;przedstawicielami biznesu, klientami, przyszłymi użytkownikami, ale oczywiście też z developerami i testerami
+                            dają życie oryginalnym pomysłom i pozwalają na wytworzenie więzi między uczestnikami projektów z różnych krajów.
+                        </div>
+                    </div>
+                    <div class="collapse" id="planModal">
+                        <div class="well">
+                            <h3>PLAN</h3>
+                            Nie planujemy zbyt daleko w przyszłość, gdyż zbyt wiele nieoczekiwanego czyha, aby pokrzyżować nam plany. Zależnie od kontekstu &mdash; szczególnie w przypadku produktów dla użytkowników zewnętrznych &mdash; stosujemy &#8222;release planning&#8221;
+                            z kilkumiesięcznym wyprzedzeniem, a&nbsp;następnie kilkudniowe iteracje w duchu Scrum. W innych przypadkach wyznaczane są cele na kilka tygodni naprzód i w systemie beziteracyjnym implementowane są fragmenty funkcjonalności, które wchodzą
+                            do produkcji przy pierwszej okazji.
+                            <br />
+                            Zależnie od projektu i kontekstu stosujemy lekkie metody estymacji, bądź w sytuacjach obarczonych wysokim ryzykiem prowadzimy serie ograniczonych czasowo eksperymentów, a estymaty nie są stosowane w ogóle.
+                        </div>
+                    </div>
+                    <div class="collapse" id="designModal">
+                        <div class="well">
+                            <h3>DESIGN</h3>
+                            Projektowanie odbywa się bez przerwy, nie jest to de facto osobna faza, a ciągły proces mający na celu efektywną ewolucję architektur naszych systemów. W procesie tym biorą udział wszyscy inżynierowie (programiści i testerzy) &mdash; nie
+                            mamy architektów &#8222;w wieżach z kości słoniowej&#8221;. Często koledzy z innych projektów zapraszani są na konsultacje i nierzadko zdarza się, że mają wpływ na kształtowanie się architektury systemu.
+                        </div>
+                    </div>
+                    <div class="collapse" id="developModal">
+                        <div class="well">
+                            <h3>DEVELOP</h3>
+                            Programując systemy stosujemy stare i wypróbowane praktyki, takie jak &#8222;pair-programming&#8221;, &#8222;test driven development&#8221;, &#8222;automated acceptance tests&#8221;, &#8222;code reviews&#8221;, ale też eksperymentujemy z nowymi, jak na przykład &#8222;mob programming&#8221;.</p>
+                            <p>Języki programowania, które się u nas pojawiają, to C#, JavaScript, Java, F#, ObjectiveC, Swift, Powershell i wiele innych.
+                        </div>
+                    </div>
+                    <div class="collapse" id="testModal">
+                        <div class="well">
+                            <h3>TESTING</h3>
+                            Testerzy współpracują ściśle z developerami, tak przy analizie wymagań, definiowaniu zakresu testowania, jak też przy automatyzacji testów. Testowanie eksploracyjne jest umiejętnie wplecione w inne fazy cylku życia oprogramowania.
+                        </div>
+                    </div>
+                    <div class="collapse" id="launchModal">
+                        <div class="well">
+                            <h3>LAUNCH</h3>
+                            Automatyzacja procesów wdrażania, zarządzanie zmianą, minimalizacja udziału ludzi we wdrażaniu, &#8222;rapid deployment&#8221;, wykorzystanie chmury &mdash; żaden z tych aspektów nie jest nam obcy. Zespoły programistów i testerów stanowiące wsparcie
+                            dla użytkowników i klientów pozwalają nam domknąć pętlę sprzężenia zwrotnego i naprawdę ulepszać nasze systemy tam, gdzie należy.
+                        </div>
                     </div>
                 </div>
             </div>
@@ -900,9 +948,9 @@
 
                     </div>
                 </div>
-              <!--  <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 fadeInUp">
-                    <img src="images/tools/server.jpg" class="img-responsive" alt="Responsive image">
-                </div> -->
+                <!--  <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 fadeInUp">
+                      <img src="images/tools/server.jpg" class="img-responsive" alt="Responsive image">
+                  </div> -->
             </div>
         </div>
 
@@ -928,11 +976,9 @@
 
     <section id="mapa">
         <div id="google-map" style="height:500px" data-latitude="54.3747678" data-longitude="18.6041048"></div>
-        <div class="container-wrapper">
             <div class="container">
                 <div class="row">
-                    <div class="col-sm-4 col-sm-offset-8">
-                        <div class="contact-form">
+                    <div class="col-sm-4 col-sm-offset-8 contact-form">
                             <h3>Dane kontaktowe</h3>
                             <address>
                                 <p>
@@ -949,11 +995,9 @@
                                     <br><a href="mailto:praca@ihs.com">praca@ihs.com</a>
                                 </p>
                             </address>
-                        </div>
                     </div>
                 </div>
             </div>
-        </div>
     </section>
 
     <!--/#bottom-->
@@ -1191,138 +1235,6 @@
             </div>
         </div>
     </div>
-
-    <div class="modal fade" id="meetModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-        <div class="modal-dialog modal-lg" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                    <h4 class="modal-title">Meet</h4>
-                </div>
-                <div class="modal-body">
-                    <p>
-                        Pomysł na nowy produkt, nowe wydanie istniejącego produktu to moment kiedy trzeba dużo rozmawiać. Spotkania w jednej lokacji z&nbsp;przedstawicielami biznesu, klientami, przyszłymi użytkownikami, ale oczywiście też z developerami i testerami
-                        dają życie oryginalnym pomysłom i pozwalają na wytworzenie więzi między uczestnikami projektów z różnych krajów.
-                    </p>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-primary" data-dismiss="modal">Zamknij</button>
-                </div>
-            </div>
-        </div>
-    </div>
-
-
-    <div class="modal fade" id="planModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-        <div class="modal-dialog modal-lg" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                    <h4 class="modal-title">Plan</h4>
-                </div>
-                <div class="modal-body">
-                    <p>
-                        Nie planujemy zbyt daleko w przyszłość, gdyż zbyt wiele nieoczekiwanego czyha, aby pokrzyżować nam plany. Zależnie od kontekstu &mdash; szczególnie w przypadku produktów dla użytkowników zewnętrznych &mdash; stosujemy &#8222;release planning&#8221;
-                        z kilkumiesięcznym wyprzedzeniem, a&nbsp;następnie kilkudniowe iteracje w duchu Scrum. W innych przypadkach wyznaczane są cele na kilka tygodni naprzód i w systemie beziteracyjnym implementowane są fragmenty funkcjonalności, które wchodzą
-                        do produkcji przy pierwszej okazji.
-                    </p>
-                    <p>Zależnie od projektu i kontekstu stosujemy lekkie metody estymacji, bądź w sytuacjach obarczonych wysokim ryzykiem prowadzimy serie ograniczonych czasowo eksperymentów, a estymaty nie są stosowane w ogóle.</p>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-primary" data-dismiss="modal">Zamknij</button>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="modal fade" id="designModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-        <div class="modal-dialog modal-lg" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                    <h4 class="modal-title">Design</h4>
-                </div>
-                <div class="modal-body">
-                    <p>
-                        Projektowanie odbywa się bez przerwy, nie jest to de facto osobna faza, a ciągły proces mający na celu efektywną ewolucję architektur naszych systemów. W procesie tym biorą udział wszyscy inżynierowie (programiści i testerzy) &mdash; nie
-                        mamy architektów &#8222;w wieżach z kości słoniowej&#8221;. Często koledzy z innych projektów zapraszani są na konsultacje i nierzadko zdarza się, że mają wpływ na kształtowanie się architektury systemu.
-                    </p>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-primary" data-dismiss="modal">Zamknij</button>
-                </div>
-            </div>
-        </div>
-    </div>
-
-
-    <div class="modal fade" id="developModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-        <div class="modal-dialog modal-lg" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                    <h4 class="modal-title">Develop</h4>
-                </div>
-                <div class="modal-body">
-                    <p>Programując systemy stosujemy stare i wypróbowane praktyki, takie jak &#8222;pair-programming&#8221;, &#8222;test driven development&#8221;, &#8222;automated acceptance tests&#8221;, &#8222;code reviews&#8221;, ale też eksperymentujemy z nowymi, jak na przykład &#8222;mob programming&#8221;.</p>
-                    <p>Języki programowania, które się u nas pojawiają, to C#, JavaScript, Java, F#, ObjectiveC, Swift, Powershell i wiele innych.</p>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-primary" data-dismiss="modal">Zamknij</button>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="modal fade" id="testModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-        <div class="modal-dialog modal-lg" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                    <h4 class="modal-title">Test</h4>
-                </div>
-                <div class="modal-body">
-                    <p>Testerzy współpracują ściśle z developerami, tak przy analizie wymagań, definiowaniu zakresu testowania, jak też przy automatyzacji testów. Testowanie eksploracyjne jest umiejętnie wplecione w inne fazy cylku życia oprogramowania.</p>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-primary" data-dismiss="modal">Zamknij</button>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="modal fade" id="launchModal" tabindex="-1" role="dialog" aria-labelledby="Launch modal window">
-        <div class="modal-dialog modal-lg" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                    <h4 class="modal-title">Launch</h4>
-                </div>
-                <div class="modal-body">
-                    <p>
-                        Automatyzacja procesów wdrażania, zarządzanie zmianą, minimalizacja udziału ludzi we wdrażaniu, &#8222;rapid deployment&#8221;, wykorzystanie chmury &mdash; żaden z tych aspektów nie jest nam obcy. Zespoły programistów i testerów stanowiące wsparcie
-                        dla użytkowników i klientów pozwalają nam domknąć pętlę sprzężenia zwrotnego i naprawdę ulepszać nasze systemy tam, gdzie należy.
-                    </p>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-primary" data-dismiss="modal">Zamknij</button>
-                </div>
-            </div>
-        </div>
-    </div>
-
     <div class="modal fade" id="modalNews1" tabindex="-1" role="dialog" aria-labelledby="Launch modal window">
         <div class="modal-dialog modal-lg" role="document">
             <div class="modal-content">
@@ -1639,7 +1551,6 @@
 
     <script src="js/jquery.fittext.js"></script>
     <script src="js/jquery.lettering.js"></script>
-    <script src="http://yandex.st/highlightjs/7.3/highlight.min.js"></script>
     <script src="jquery.textillate.js"></script>
     <script>hljs.initHighlightingOnLoad();</script>
     <script>
