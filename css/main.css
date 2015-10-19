@@ -397,7 +397,7 @@ ul.nostyle i {
 }
 #work-process h3 {
   color: #fff;
-  margin-bottom: 0;
+  margin-bottom: 10px;
 }
 #work-process .icon-circle {
   display: inline-block;
@@ -420,9 +420,6 @@ ul.nostyle i {
   line-height: 20px;
   top: -12px;
   color: #444444 4;
-}
-#work-process h3 {
-  margin-bottom: 50px;
 }
 #meet-team {
   padding: 100px 0;
