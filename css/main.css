@@ -14,7 +14,7 @@ body {
   font-family: 'Roboto', sans-serif;
   font-weight: 400;
   color: #444444 4;
-  line-height: 26px;
+  line-height: 22px;
 }
 h1,
 h2,
@@ -92,6 +92,7 @@ hr {
 }
 .btn {
   border: none;
+  border-radius: 0;
 }
 .btn.btn-primary {
   background: #00a9cb;
@@ -192,6 +193,7 @@ ul.nostyle i {
     background: transparent;
     padding-top: 37px;
     border-top: 3px solid #00a9cb;
+    color: black;
   }
   #main-menu.navbar-default .dropdown-menu {
     padding: 0 20px;
@@ -303,15 +305,6 @@ ul.nostyle i {
   width: 100%;
   background: rgba(0, 0, 0, 0.1);
 }
-#features {
-  padding: 100px 0;
-}
-#features .media.service-box:first-child {
-  margin-top: 80px;
-}
-#services {
-  padding: 100px 0 75px;
-}
 .media.service-box {
   margin: 25px 0;
 }
@@ -383,51 +376,6 @@ ul.nostyle i {
   border-radius: 20px;
   background: #00a9cb;
 }
-#about {
-  padding: 100px 0;
-}
-#meet-team {
-  padding: 100px 0;
-}
-#meet-team .team-member {
-  padding: 13px;
-  background: #eeeeee;
-  border: 2px solid #eeeeee;
-  transition: border-color 400ms;
-  -webkit-transition: border-color 400ms;
-}
-#meet-team .team-member .team-img {
-  margin: -15px -15px 0 -15px;
-}
-#meet-team .team-member .team-info {
-  padding-bottom: 10px;
-  border-bottom: 1px solid #dbdbdb;
-  margin-bottom: 10px;
-}
-#meet-team .team-member:hover {
-  border-color: #00a9cb;
-}
-#meet-team .team-member:hover .social-icons > li > a {
-  background: #00a9cb;
-}
-#meet-team .social-icons {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-#meet-team .social-icons > li {
-  display: inline-block;
-}
-#meet-team .social-icons > li > a {
-  display: block;
-  width: 32px;
-  height: 32px;
-  line-height: 32px;
-  text-align: center;
-  color: #fff;
-  background: #222534;
-  border-radius: 3px;
-}
 .divider {
   margin-top: 50px;
   margin-bottom: 50px;
@@ -475,18 +423,15 @@ ul.nostyle i {
   border-radius: 0 0 3px 3px;
 }
 .panel-default {
-  border-color: #eee;
+  border: none;
+  background: none;
 }
 .panel-default > .panel-heading {
-  background-color: #fff;
-  border-color: #eee;
-}
-.panel-default > .panel-heading .panel-title {
-  font-size: 14px;
-  font-weight: normal;
+  background: none;
+  border: none;
 }
 .panel-default > .panel-heading + .panel-collapse > .panel-body {
-  border-top-color: #eee;
+  border: none;
 }
 #animated-number {
   padding: 100px 0 70px;
@@ -513,36 +458,6 @@ ul.nostyle i {
   border: 3px solid #fff;
   border-radius: 100px;
   margin-bottom: 20px;
-}
-#get-in-touch {
-  padding: 100px 0 50px;
-  background: #00a9cb;
-  color: #fff;
-}
-#get-in-touch h1,
-#get-in-touch h2 {
-  color: #fff;
-}
-#contact {
-  position: relative;
-  overflow: hidden;
-}
-#contact .container-wrapper {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 169, 203, 0.3);
-  z-index: 1;
-}
-#contact .contact-form {
-  background: rgba(255, 255, 255, 0.8);
-  padding: 20px;
-  margin-top: 120px;
-}
-#contact .contact-form h3 {
-  margin-top: 0;
 }
 /***********************
 ********* Footer ******
@@ -572,11 +487,6 @@ ul.nostyle i {
   #footer .social-icons {
     float: right;
   }
-}
-#news,
-#career,
-#software {
-  padding: 100px 0 75px;
 }
 .form-control {
   box-shadow: none;
