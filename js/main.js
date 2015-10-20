@@ -215,6 +215,13 @@ jQuery(function($) {'use strict';
 	}, 2000);
 
 
+	$('.collapse').collapse({
+		 toggle: false
+	});
+
+	$('.collapse').on('shown.bs.collapse', function () {
+   		$('.collapse').not($(this)).collapse('hide');
+	});
 
 	//Google Map
 	var latitude = $('#google-map').data('latitude');
