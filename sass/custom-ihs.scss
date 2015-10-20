@@ -226,13 +226,9 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
 /****************** LUDZIE */
 
 #ludzie {
-  padding: 100px 0;
+  padding: 100px 0 20px;
   .team-member {
-    padding: 13px;
-    background: #eeeeee;
-    border: 2px solid #eeeeee;
-    transition: border-color 400ms;
-    -webkit-transition: border-color 400ms;
+    padding: 15px;
 
     .team-img {
       margin: -15px -15px 0 -15px;
@@ -242,6 +238,10 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
       padding-bottom: 10px;
       border-bottom: 1px solid #dbdbdb;
       margin-bottom: 10px;
+	  
+	  span {
+			font-style: italic;
+		}
     }
 
     &:hover {
@@ -256,6 +256,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
     list-style: none;
     padding: 0;
     margin: 0;
+	display:none;
     >li {
       display: inline-block;
       >a {
