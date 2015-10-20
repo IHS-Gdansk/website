@@ -48,6 +48,14 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
 	}
 }
 
+.dark-section {
+    background: $dark_color;
+    color: #fff;
+        h1, h2, h3, h4 {
+        color: #fff;
+        }
+}
+
 #news, #ihs, #narzedzia, #kontakt, #produkty {
   padding: 100px 0 75px;
 }
@@ -309,14 +317,10 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
 /****************** CIEKAWOSTKI */
 
 #ciekawostki {
-  background: $dark_color;
   padding: 100px 0 30px;
-  color: #fff;
   overflow:hidden;
   position: relative;
-  h1, h2, h3, h4 {
-    color: #fff;
-  }
+
   .customNavigation {
     .btn {
       position: absolute;

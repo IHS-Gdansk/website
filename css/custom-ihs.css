@@ -19,6 +19,12 @@
   .white-section .btn-lg {
     margin-top: 20px; }
 
+.dark-section {
+  background: #20222e;
+  color: #fff; }
+  .dark-section h1, .dark-section h2, .dark-section h3, .dark-section h4 {
+    color: #fff; }
+
 #news, #ihs, #narzedzia, #kontakt, #produkty {
   padding: 100px 0 75px; }
 
@@ -212,13 +218,9 @@
 /*______________________________________________________________*/
 /****************** CIEKAWOSTKI */
 #ciekawostki {
-  background: #20222e;
   padding: 100px 0 30px;
-  color: #fff;
   overflow: hidden;
   position: relative; }
-  #ciekawostki h1, #ciekawostki h2, #ciekawostki h3, #ciekawostki h4 {
-    color: #fff; }
   #ciekawostki .customNavigation .btn {
     position: absolute;
     top: 50%;
