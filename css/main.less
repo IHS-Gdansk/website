@@ -14,14 +14,13 @@ Author URL: http://shapebootstrap.net
 @major_color: #00a9cb;
 @text_color: #4444;
 
-
 body {
   padding-top: 100px;
   background: #fff;
   font-family: 'Roboto', sans-serif;
   font-weight: 400;
   color: @text_color;
-  line-height: 26px;
+  line-height: 22px;
 }
 
 h1,
@@ -111,6 +110,7 @@ hr {
 
 .btn {
   border: none;
+  border-radius:0;
 
   &.btn-primary {
     background: @major_color;
@@ -234,6 +234,7 @@ ul.nostyle {
             background: transparent;
             padding-top: 37px;
             border-top: 3px solid @major_color;
+            color: black;
           }
         }
       }
@@ -372,22 +373,7 @@ ul.nostyle {
   background: rgba(0, 0, 0, 0.1);
 }
 
-//Features
-#features {
-  padding: 100px 0;
-  .media.service-box {
-    &:first-child {
-      margin-top: 80px;
-    }
-  }
-}
-
-
 //Services
-#services {
-  padding: 100px 0 75px;
-}
-
 .media.service-box {
   margin: 25px 0;
   .pull-left {
@@ -464,61 +450,6 @@ ul.nostyle {
   }
 }
 
-#about {
-  padding: 100px 0;
-}
-
-
-
-//Meet The Team
-
-#meet-team {
-  padding: 100px 0;
-  .team-member {
-    padding: 13px;
-    background: #eeeeee;
-    border: 2px solid #eeeeee;
-    transition: border-color 400ms;
-    -webkit-transition: border-color 400ms;
-
-    .team-img {
-      margin: -15px -15px 0 -15px;
-    }
-
-    .team-info {
-      padding-bottom: 10px;
-      border-bottom: 1px solid #dbdbdb;
-      margin-bottom: 10px;
-    }
-
-    &:hover {
-      border-color: @major_color;
-      .social-icons>li>a {
-        background: @major_color;
-      }
-    }
-  }
-
-  .social-icons {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    >li {
-      display: inline-block;
-      >a {
-        display: block;
-        width: 32px;
-        height: 32px;
-        line-height: 32px;
-        text-align: center;
-        color: #fff;
-        background: #222534;
-        border-radius: 3px;
-      }
-    }
-  }
-}
-
 //About Us Info
 .divider {
   margin-top: 50px;
@@ -582,20 +513,18 @@ ul.nostyle {
 
 //Accordion
 .panel-default {
-  border-color: #eee;
+  border: none;
+  background: none;
   >.panel-heading {
-    background-color: #fff;
-    border-color: #eee;
-    .panel-title {
-      font-size: 14px;
-      font-weight: normal;
-    }
+    background: none;
+    border: none;
   }
 
   >.panel-heading+.panel-collapse>.panel-body {
-    border-top-color: #eee;
+    border: none;
   }
 }
+
 
 //Animated Number
 #animated-number {
@@ -625,41 +554,6 @@ ul.nostyle {
 }
 
 
-//Get In Touch
-#get-in-touch {
-  padding: 100px 0 50px;
-  // .gradiant-horizontal();
-  background: @major_color;
-  color: #fff;
-  h1,h2 {
-    color: #fff;
-  }
-}
-
-
-//Contact
-#contact {
-  position: relative;
-  overflow: hidden;
-  .container-wrapper {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: fade(@major_color, 30%);
-    z-index: 1;
-  }
-
-  .contact-form {
-    background: rgba(255, 255, 255, 0.8);
-    padding: 20px;
-    margin-top: 120px;
-    h3 {
-      margin-top: 0;
-    }
-  }
-}
 
 /***********************
 ********* Footer ******
@@ -698,12 +592,6 @@ ul.nostyle {
 }
 
 
-//Services
-#news, #career, #software {
-  padding: 100px 0 75px;
-}
-
-
 //Others
 .form-control {
   box-shadow: none;
@@ -715,7 +603,6 @@ ul.nostyle {
     text-shadow: 1px 1px 5px @blueShadow, -1px -1px 5px @blueShadow, -1px 1px 5px @blueShadow, 1px -1px 5px @blueShadow;
     font-size: 17px;
     font-weight: normal;
-
     color:#fff;
 
 }

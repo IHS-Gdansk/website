@@ -1,11 +1,33 @@
 
+/*______________________________________________________________*/
+/****************** MIXINS */
+
 $blue_color: #00a9cb;
 $orange_color: #f7941d;
 $green_color: #96bc33;
 $red_color: #f04e23;
 $dark_color: #20222e;
+$text-color: #444;
 
-/*----------------------------- GLOBAL ------------------------------------*/
+%todo-gradiant {
+background: #ffffff; /* Old browsers */
+background: -moz-linear-gradient(left,  #ffffff 0%, #ffffff 50%, #ffffff 50%, #000000 50%, #000000 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, right top, color-stop(0%,#ffffff), color-stop(50%,#ffffff), color-stop(50%,#ffffff), color-stop(50%,#000000), color-stop(100%,#000000)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(left,  #ffffff 0%,#ffffff 50%,#ffffff 50%,#000000 50%,#000000 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(left,  #ffffff 0%,#ffffff 50%,#ffffff 50%,#000000 50%,#000000 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(left,  #ffffff 0%,#ffffff 50%,#ffffff 50%,#000000 50%,#000000 100%); /* IE10+ */
+background: linear-gradient(to right,  #ffffff 0%,#ffffff 50%,#ffffff 50%,#000000 50%,#000000 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#000000',GradientType=1 ); /* IE6-9 */
+}
+
+
+/*______________________________________________________________*/
+/****************** GLOBAL */
+
+
+/*______________________________________________________________*/
+/****************** SECTIONS */
+
 
 .blue-section {
 	background: $blue_color;
@@ -26,6 +48,15 @@ $dark_color: #20222e;
 	}
 }
 
+.dark-section {
+    background: $dark_color;
+    color: #fff;
+        .section-header .section-title,
+        h1, h2, h3, h4 {
+        color: #fff;
+        }
+}
+
 #news, #ihs, #narzedzia, #kontakt, #produkty {
   padding: 100px 0 75px;
 }
@@ -34,24 +65,8 @@ $dark_color: #20222e;
   padding: 0px 0 30px;
 }
 
-.btn {
-	border-radius:0;
-}
-
-.xxx {
-background: #ffffff; /* Old browsers */
-background: -moz-linear-gradient(left,  #ffffff 0%, #ffffff 50%, #ffffff 50%, #000000 50%, #000000 100%); /* FF3.6+ */
-background: -webkit-gradient(linear, left top, right top, color-stop(0%,#ffffff), color-stop(50%,#ffffff), color-stop(50%,#ffffff), color-stop(50%,#000000), color-stop(100%,#000000)); /* Chrome,Safari4+ */
-background: -webkit-linear-gradient(left,  #ffffff 0%,#ffffff 50%,#ffffff 50%,#000000 50%,#000000 100%); /* Chrome10+,Safari5.1+ */
-background: -o-linear-gradient(left,  #ffffff 0%,#ffffff 50%,#ffffff 50%,#000000 50%,#000000 100%); /* Opera 11.10+ */
-background: -ms-linear-gradient(left,  #ffffff 0%,#ffffff 50%,#ffffff 50%,#000000 50%,#000000 100%); /* IE10+ */
-background: linear-gradient(to right,  #ffffff 0%,#ffffff 50%,#ffffff 50%,#000000 50%,#000000 100%); /* W3C */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#000000',GradientType=1 ); /* IE6-9 */
-}
-
-
-/*-----------------------------------------------------------------------------
------------------------------- SLIDER ---------------------------------------*/
+/*______________________________________________________________*/
+/****************** SLIDER */
 
 #slider {
     width: 100%;
@@ -86,8 +101,8 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
 }
 
 
-/*-----------------------------------------------------------------------------
--------------------------------- TABS ---------------------------------------*/
+/*______________________________________________________________*/
+/****************** TABS */
 
 .custom-tabs {
     .tab-content {
@@ -131,10 +146,33 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
 }
 
 
-/*-----------------------------------------------------------------------------
--------------------------------- PROCES---------------------------------------*/
+/*______________________________________________________________*/
+/****************** KARUZELA */
+
+#owl-ciekawostki .item{
+  padding: 30px 0px;
+  margin: 10px;
+  color: #FFF;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  text-align: center;
+}
+.customNavigation{
+  text-align: center;
+}
+.customNavigation a{
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
 
 
+/*______________________________________________________________*/
+/****************** PROCES*/
 
 #proces {
   padding: 100px 0 50px;
@@ -183,18 +221,107 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
     }
 }
 
-/*-----------------------------------------------------------------------------
------------------------------ CIEKAWOSTKI ------------------------------------*/
+
+/*______________________________________________________________*/
+/****************** LUDZIE */
+
+#ludzie {
+  padding: 100px 0;
+  .team-member {
+    padding: 13px;
+    background: #eeeeee;
+    border: 2px solid #eeeeee;
+    transition: border-color 400ms;
+    -webkit-transition: border-color 400ms;
+
+    .team-img {
+      margin: -15px -15px 0 -15px;
+    }
+
+    .team-info {
+      padding-bottom: 10px;
+      border-bottom: 1px solid #dbdbdb;
+      margin-bottom: 10px;
+    }
+
+    &:hover {
+      border-color: $blue_color;
+      .social-icons>li>a {
+        background: $blue_color;
+      }
+    }
+  }
+
+  .social-icons {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    >li {
+      display: inline-block;
+      >a {
+        display: block;
+        width: 32px;
+        height: 32px;
+        line-height: 32px;
+        text-align: center;
+        color: #fff;
+        background: #222534;
+        border-radius: 3px;
+      }
+    }
+  }
+}
+
+/*______________________________________________________________*/
+/****************** KARIERA */
+
+#kariera {
+	padding: 100px 0 75px;
+	.row {
+		margin-bottom: 40px;
+	}
+
+    h4  {
+	    .fa {
+		    margin-right:10px;
+	    }
+    }
+    .photo-wrapper {
+        margin-top: -15px;
+    }
+}
+.gift-wrapper {
+    position:relative;
+    height: 320px;
+    .gift-image {
+        position: absolute;
+        top: 35%;
+        left: 40%;
+        font-size: 100px;
+    }
+}
+@media (max-width: 770px) {
+    .gift-wrapper {
+        height: 200px;
+        .gift-image {
+            position: absolute;
+            top: 35%;
+            left: 40%;
+            font-size: 100px;
+        }
+    }
+
+}
+
+
+/*______________________________________________________________*/
+/****************** CIEKAWOSTKI */
 
 #ciekawostki {
-  background: $dark_color;
   padding: 100px 0 30px;
-  color: #fff;
   overflow:hidden;
   position: relative;
-  h1, h2, h3, h4 {
-    color: #fff;
-  }
+
   .customNavigation {
     .btn {
       position: absolute;
@@ -261,54 +388,23 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
 }
 
 
-/*-----------------------------------------------------------------------------
------------------------------ KARIERA ---------------------------------------*/
+/*______________________________________________________________*/
+/****************** NARZEDZIA */
 
-#kariera {
-	padding: 100px 0 75px;
-	.row {
-		margin-bottom: 40px;
-	}
 
-    h4  {
-	    .fa {
-		    margin-right:10px;
-	    }
-    }
-    .photo-wrapper {
-        margin-top: -15px;
-    }
+#narzedzia {
+    background: url(../images/tools/tools.jpg) no-repeat right 100px;
 }
-.gift-wrapper {
-    position:relative;
-    height: 320px;
-    .gift-image {
-        position: absolute;
-        top: 35%;
-        left: 40%;
-        font-size: 100px;
-    }
-}
-@media (max-width: 770px) {
+@media (max-width: 1000px) {
 
-	#news, #ihs, #narzedzia, #kontakt, #produkty {
-	  padding: 40px 0 30px;
-	}
-    .gift-wrapper {
-        height: 200px;
-        .gift-image {
-            position: absolute;
-            top: 35%;
-            left: 40%;
-            font-size: 100px;
-        }
+    #narzedzia {
+        background: none;
     }
-
 }
 
 
-/*-----------------------------------------------------------------------------
------------------------------- KONTAKT ---------------------------------------*/
+/*______________________________________________________________*/
+/****************** KONTAKT */
 
 #kontakt {
     padding: 100px 0 50px;
@@ -319,9 +415,8 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
       }
 }
 
-/*-----------------------------------------------------------------------------
------------------------------- MAPA ------------------------------------------*/
-
+/*______________________________________________________________*/
+/****************** MAPA */
 
 #mapa {
   position: relative;
@@ -345,35 +440,19 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
 }
 
 
-/*-----------------------------------------------------------------------------
------------------------------- FOOTER ------------------------------------------*/
+/*______________________________________________________________*/
+/****************** FOOTER */
 
 #footer {
-    background: $dark_color;
+  background: $dark_color;
 }
 
-/*-----------------------------------------------------------------------------
------------------------------ KARUZELA ---------------------------------------*/
 
+/*______________________________________________________________*/
+/****************** RESPONSIVE */
 
-#owl-ciekawostki .item{
-  padding: 30px 0px;
-  margin: 10px;
-  color: #FFF;
-  -webkit-border-radius: 3px;
-  -moz-border-radius: 3px;
-  border-radius: 3px;
-  text-align: left;
-}
-.customNavigation{
-  text-align: center;
-}
-//use styles below to disable ugly selection
-.customNavigation a{
-  -webkit-user-select: none;
-  -khtml-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+@media (max-width: 770px) {
+	#news, #ihs, #narzedzia, #kontakt, #produkty {
+	  padding: 40px 0 30px;
+	}
 }

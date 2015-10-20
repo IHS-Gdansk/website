@@ -1,4 +1,9 @@
-/*----------------------------- GLOBAL ------------------------------------*/
+/*______________________________________________________________*/
+/****************** MIXINS */
+/*______________________________________________________________*/
+/****************** GLOBAL */
+/*______________________________________________________________*/
+/****************** SECTIONS */
 .blue-section {
   background: #00a9cb;
   color: #fff; }
@@ -14,35 +19,21 @@
   .white-section .btn-lg {
     margin-top: 20px; }
 
+.dark-section {
+  background: #20222e;
+  color: #fff; }
+  .dark-section .section-header .section-title,
+  .dark-section h1, .dark-section h2, .dark-section h3, .dark-section h4 {
+    color: #fff; }
+
 #news, #ihs, #narzedzia, #kontakt, #produkty {
   padding: 100px 0 75px; }
 
 #software, #features {
   padding: 0px 0 30px; }
 
-.btn {
-  border-radius: 0; }
-
-.xxx {
-  background: #ffffff;
-  /* Old browsers */
-  background: -moz-linear-gradient(left, #ffffff 0%, #ffffff 50%, #ffffff 50%, #000000 50%, #000000 100%);
-  /* FF3.6+ */
-  background: -webkit-gradient(linear, left top, right top, color-stop(0%, #ffffff), color-stop(50%, #ffffff), color-stop(50%, #ffffff), color-stop(50%, #000000), color-stop(100%, #000000));
-  /* Chrome,Safari4+ */
-  background: -webkit-linear-gradient(left, #ffffff 0%, #ffffff 50%, #ffffff 50%, #000000 50%, #000000 100%);
-  /* Chrome10+,Safari5.1+ */
-  background: -o-linear-gradient(left, #ffffff 0%, #ffffff 50%, #ffffff 50%, #000000 50%, #000000 100%);
-  /* Opera 11.10+ */
-  background: -ms-linear-gradient(left, #ffffff 0%, #ffffff 50%, #ffffff 50%, #000000 50%, #000000 100%);
-  /* IE10+ */
-  background: linear-gradient(to right, #ffffff 0%, #ffffff 50%, #ffffff 50%, #000000 50%, #000000 100%);
-  /* W3C */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#000000',GradientType=1 );
-  /* IE6-9 */ }
-
-/*-----------------------------------------------------------------------------
------------------------------- SLIDER ---------------------------------------*/
+/*______________________________________________________________*/
+/****************** SLIDER */
 #slider {
   width: 100%;
   background: url(../images/slider/kontemplacja.jpg);
@@ -68,8 +59,8 @@
     margin: 0;
     padding: 0; }
 
-/*-----------------------------------------------------------------------------
--------------------------------- TABS ---------------------------------------*/
+/*______________________________________________________________*/
+/****************** TABS */
 .custom-tabs .tab-content {
   border: none; }
 .custom-tabs .nav-tabs > li > a {
@@ -98,8 +89,30 @@
       background: none;
       color: #272727; }
 
-/*-----------------------------------------------------------------------------
--------------------------------- PROCES---------------------------------------*/
+/*______________________________________________________________*/
+/****************** KARUZELA */
+#owl-ciekawostki .item {
+  padding: 30px 0px;
+  margin: 10px;
+  color: #FFF;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  text-align: center; }
+
+.customNavigation {
+  text-align: center; }
+
+.customNavigation a {
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-tap-highlight-color: transparent; }
+
+/*______________________________________________________________*/
+/****************** PROCES*/
 #proces {
   padding: 100px 0 50px;
   background: #20222e url(../images/work-process/bg.jpg) no-repeat 0 0;
@@ -139,16 +152,76 @@
     #proces .well h3 {
       color: #00a9cb; }
 
-/*-----------------------------------------------------------------------------
------------------------------ CIEKAWOSTKI ------------------------------------*/
+/*______________________________________________________________*/
+/****************** LUDZIE */
+#ludzie {
+  padding: 100px 0; }
+  #ludzie .team-member {
+    padding: 13px;
+    background: #eeeeee;
+    border: 2px solid #eeeeee;
+    transition: border-color 400ms;
+    -webkit-transition: border-color 400ms; }
+    #ludzie .team-member .team-img {
+      margin: -15px -15px 0 -15px; }
+    #ludzie .team-member .team-info {
+      padding-bottom: 10px;
+      border-bottom: 1px solid #dbdbdb;
+      margin-bottom: 10px; }
+    #ludzie .team-member:hover {
+      border-color: #00a9cb; }
+      #ludzie .team-member:hover .social-icons > li > a {
+        background: #00a9cb; }
+  #ludzie .social-icons {
+    list-style: none;
+    padding: 0;
+    margin: 0; }
+    #ludzie .social-icons > li {
+      display: inline-block; }
+      #ludzie .social-icons > li > a {
+        display: block;
+        width: 32px;
+        height: 32px;
+        line-height: 32px;
+        text-align: center;
+        color: #fff;
+        background: #222534;
+        border-radius: 3px; }
+
+/*______________________________________________________________*/
+/****************** KARIERA */
+#kariera {
+  padding: 100px 0 75px; }
+  #kariera .row {
+    margin-bottom: 40px; }
+  #kariera h4 .fa {
+    margin-right: 10px; }
+  #kariera .photo-wrapper {
+    margin-top: -15px; }
+
+.gift-wrapper {
+  position: relative;
+  height: 320px; }
+  .gift-wrapper .gift-image {
+    position: absolute;
+    top: 35%;
+    left: 40%;
+    font-size: 100px; }
+
+@media (max-width: 770px) {
+  .gift-wrapper {
+    height: 200px; }
+    .gift-wrapper .gift-image {
+      position: absolute;
+      top: 35%;
+      left: 40%;
+      font-size: 100px; } }
+/*______________________________________________________________*/
+/****************** CIEKAWOSTKI */
 #ciekawostki {
-  background: #20222e;
   padding: 100px 0 30px;
-  color: #fff;
   overflow: hidden;
   position: relative; }
-  #ciekawostki h1, #ciekawostki h2, #ciekawostki h3, #ciekawostki h4 {
-    color: #fff; }
   #ciekawostki .customNavigation .btn {
     position: absolute;
     top: 50%;
@@ -191,39 +264,16 @@
       min-height: 350px; }
   #ciekawostki .row .ciekawostki-caption {
     bottom: -280px; } }
-/*-----------------------------------------------------------------------------
------------------------------ KARIERA ---------------------------------------*/
-#kariera {
-  padding: 100px 0 75px; }
-  #kariera .row {
-    margin-bottom: 40px; }
-  #kariera h4 .fa {
-    margin-right: 10px; }
-  #kariera .photo-wrapper {
-    margin-top: -15px; }
+/*______________________________________________________________*/
+/****************** NARZEDZIA */
+#narzedzia {
+  background: url(../images/tools/tools.jpg) no-repeat right 100px; }
 
-.gift-wrapper {
-  position: relative;
-  height: 320px; }
-  .gift-wrapper .gift-image {
-    position: absolute;
-    top: 35%;
-    left: 40%;
-    font-size: 100px; }
-
-@media (max-width: 770px) {
-  #news, #ihs, #narzedzia, #kontakt, #produkty {
-    padding: 40px 0 30px; }
-
-  .gift-wrapper {
-    height: 200px; }
-    .gift-wrapper .gift-image {
-      position: absolute;
-      top: 35%;
-      left: 40%;
-      font-size: 100px; } }
-/*-----------------------------------------------------------------------------
------------------------------- KONTAKT ---------------------------------------*/
+@media (max-width: 1000px) {
+  #narzedzia {
+    background: none; } }
+/*______________________________________________________________*/
+/****************** KONTAKT */
 #kontakt {
   padding: 100px 0 50px;
   background: #00a9cb;
@@ -231,8 +281,8 @@
   #kontakt h1, #kontakt h2 {
     color: #fff; }
 
-/*-----------------------------------------------------------------------------
------------------------------- MAPA ------------------------------------------*/
+/*______________________________________________________________*/
+/****************** MAPA */
 #mapa {
   position: relative;
   overflow: hidden; }
@@ -250,31 +300,15 @@
   #mapa strong {
     color: #272727; }
 
-/*-----------------------------------------------------------------------------
------------------------------- FOOTER ------------------------------------------*/
+/*______________________________________________________________*/
+/****************** FOOTER */
 #footer {
   background: #20222e; }
 
-/*-----------------------------------------------------------------------------
------------------------------ KARUZELA ---------------------------------------*/
-#owl-ciekawostki .item {
-  padding: 30px 0px;
-  margin: 10px;
-  color: #FFF;
-  -webkit-border-radius: 3px;
-  -moz-border-radius: 3px;
-  border-radius: 3px;
-  text-align: left; }
-
-.customNavigation {
-  text-align: center; }
-
-.customNavigation a {
-  -webkit-user-select: none;
-  -khtml-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  -webkit-tap-highlight-color: transparent; }
+/*______________________________________________________________*/
+/****************** RESPONSIVE */
+@media (max-width: 770px) {
+  #news, #ihs, #narzedzia, #kontakt, #produkty {
+    padding: 40px 0 30px; } }
 
 /*# sourceMappingURL=custom-ihs.css.map */
