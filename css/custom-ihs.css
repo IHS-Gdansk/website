@@ -22,6 +22,7 @@
 .dark-section {
   background: #20222e;
   color: #fff; }
+  .dark-section .section-header .section-title,
   .dark-section h1, .dark-section h2, .dark-section h3, .dark-section h4 {
     color: #fff; }
 
