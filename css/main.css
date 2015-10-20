@@ -433,6 +433,18 @@ ul.nostyle i {
 .panel-default > .panel-heading + .panel-collapse > .panel-body {
   border: none;
 }
+.modal-content {
+  border-radius: 0;
+}
+.modal-content .modal-header {
+  padding: 30px;
+}
+.modal-content .modal-body {
+  padding: 30px;
+}
+.modal-content .modal-footer {
+  padding: 30px;
+}
 #animated-number {
   padding: 100px 0 70px;
   background: #132125 url(../images/animated-number/bg.jpg) no-repeat 0 0;
