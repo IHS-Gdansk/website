@@ -155,19 +155,20 @@
 /*______________________________________________________________*/
 /****************** LUDZIE */
 #ludzie {
-  padding: 100px 0; }
+  padding: 100px 0 20px; }
   #ludzie .team-member {
-    padding: 13px;
-    background: #eeeeee;
-    border: 2px solid #eeeeee;
-    transition: border-color 400ms;
-    -webkit-transition: border-color 400ms; }
+    padding: 15px; }
     #ludzie .team-member .team-img {
       margin: -15px -15px 0 -15px; }
     #ludzie .team-member .team-info {
       padding-bottom: 10px;
       border-bottom: 1px solid #dbdbdb;
       margin-bottom: 10px; }
+      #ludzie .team-member .team-info span {
+        font-style: italic;
+        margin-top: -5px;
+        color: #999;
+        display: block; }
     #ludzie .team-member:hover {
       border-color: #00a9cb; }
       #ludzie .team-member:hover .social-icons > li > a {
@@ -175,7 +176,8 @@
   #ludzie .social-icons {
     list-style: none;
     padding: 0;
-    margin: 0; }
+    margin: 0;
+    display: none; }
     #ludzie .social-icons > li {
       display: inline-block; }
       #ludzie .social-icons > li > a {
