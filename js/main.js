@@ -231,9 +231,15 @@ jQuery(function($) {'use strict';
 		var mapOptions = {
 			zoom: 14,
 			scrollwheel: false,
+			zoomControl: false,
+			streetViewControl: false,
+			mapTypeControl: false,
 			center: myLatlng
 		};
 		var map = new google.maps.Map(document.getElementById('google-map'), mapOptions);
+		map.addListener('bounds_changed', function () {
+			map.setCenter(myLatlng);
+		});
 		var marker = new google.maps.Marker({
 			position: myLatlng,
 			map: map
