@@ -165,7 +165,10 @@
       border-bottom: 1px solid #dbdbdb;
       margin-bottom: 10px; }
       #ludzie .team-member .team-info span {
-        font-style: italic; }
+        font-style: italic;
+        margin-top: -5px;
+        color: #999;
+        display: block; }
     #ludzie .team-member:hover {
       border-color: #00a9cb; }
       #ludzie .team-member:hover .social-icons > li > a {
