@@ -234,7 +234,7 @@ jQuery(function($) {'use strict';
 			center: myLatlng
 		};
 		var map = new google.maps.Map(document.getElementById('google-map'), mapOptions);
-		map.addListener('bounds_changed', function () {
+		google.maps.event.addDomListener(window, 'resize', function() {
 			map.setCenter(myLatlng);
 		});
 		var marker = new google.maps.Marker({
