@@ -433,9 +433,21 @@ ul.nostyle i {
 .panel-default > .panel-heading + .panel-collapse > .panel-body {
   border: none;
 }
+.modal-content {
+  border-radius: 0;
+}
+.modal-content .modal-header {
+  padding: 30px;
+}
+.modal-content .modal-body {
+  padding: 30px;
+}
+.modal-content .modal-footer {
+  padding: 30px;
+}
 #animated-number {
-  padding: 100px 0 70px;
-  background: #132125 url(../images/animated-number/bg.jpg) no-repeat 0 0;
+  padding: 80px 0 50px;
+  background: #20222e url(../images/animated-number/bg.jpg) no-repeat 0 0;
   background-size: cover;
   color: #fff;
 }
@@ -453,9 +465,9 @@ ul.nostyle i {
   display: inline-block;
   width: 140px;
   height: 140px;
-  font-size: 24px;
+  font-size: 28px;
   line-height: 140px;
-  border: 3px solid #fff;
+  border: 3px solid #00a9cb;
   border-radius: 100px;
   margin-bottom: 20px;
 }
