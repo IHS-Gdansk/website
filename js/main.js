@@ -235,7 +235,9 @@ jQuery(function($) {'use strict';
 		};
 		var map = new google.maps.Map(document.getElementById('google-map'), mapOptions);
 		google.maps.event.addDomListener(window, 'resize', function() {
-			map.setCenter(myLatlng);
+		    var center = map.getCenter();
+		    google.maps.event.trigger(map, 'resize');
+		    map.setCenter(center); 
 		});
 		var marker = new google.maps.Marker({
 			position: myLatlng,
