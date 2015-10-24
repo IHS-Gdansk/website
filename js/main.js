@@ -234,8 +234,10 @@ jQuery(function($) {'use strict';
 			center: myLatlng
 		};
 		var map = new google.maps.Map(document.getElementById('google-map'), mapOptions);
-		map.addListener('bounds_changed', function () {
-			map.setCenter(myLatlng);
+		google.maps.event.addDomListener(window, 'resize', function() {
+		    var center = map.getCenter();
+		    google.maps.event.trigger(map, 'resize');
+		    map.setCenter(center); 
 		});
 		var marker = new google.maps.Marker({
 			position: myLatlng,
