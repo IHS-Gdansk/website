@@ -109,7 +109,7 @@
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-  -webkit-tap-highlight-color: transparent; }
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0); }
 
 /*______________________________________________________________*/
 /****************** PROCES*/
@@ -219,6 +219,54 @@
       left: 40%;
       font-size: 100px; } }
 /*______________________________________________________________*/
+/****************** AKTUALNOSCI */
+#aktualnosci {
+  padding: 100px 0 30px;
+  overflow: hidden;
+  position: relative; }
+  #aktualnosci .customNavigation .btn {
+    position: absolute;
+    top: 50%;
+    background-color: #00a9cb;
+    color: #fff;
+    font-size: 35px;
+    display: inline-block;
+    margin-top: -35px;
+    height: 70px;
+    width: 70px;
+    line-height: 57px;
+    text-align: center;
+    border-radius: 100px;
+    z-index: 5;
+    overflow: hidden; }
+  #aktualnosci .customNavigation .prev {
+    left: -35px;
+    text-indent: 14px; }
+  #aktualnosci .customNavigation .next {
+    right: -30px;
+    text-indent: -14px; }
+  #aktualnosci .carousel-indicators {
+    bottom: -50px; }
+
+@media (max-width: 1200px) {
+  #aktualnosci .row .ciekawostki-item {
+    height: 400px; }
+    #aktualnosci .row .ciekawostki-item img {
+      min-height: 450px; }
+  #aktualnosci .row .ciekawostki-caption {
+    bottom: -330px; }
+    #aktualnosci .row .ciekawostki-caption h2 {
+      font-size: 20px; }
+  #aktualnosci .row .ciekawostki-item:hover .ciekawostki-caption {
+    background: rgba(0, 0, 0, 0.85); } }
+@media (max-width: 970px) {
+  #aktualnosci .row .ciekawostki-item {
+    height: 350px; }
+    #aktualnosci .row .ciekawostki-item img {
+      min-height: 350px; }
+  #aktualnosci .row .ciekawostki-caption {
+    bottom: -280px; } }
+/*______________________________________________________________*/
 /****************** CIEKAWOSTKI */
 #ciekawostki {
   padding: 100px 0 30px;
@@ -312,5 +360,3 @@
 @media (max-width: 770px) {
   #news, #ihs, #narzedzia, #kontakt, #produkty {
     padding: 40px 0 30px; } }
-
-/*# sourceMappingURL=custom-ihs.css.map */
