@@ -321,6 +321,79 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
 /*______________________________________________________________*/
 /****************** CIEKAWOSTKI */
 
+#aktualnosci {
+  padding: 100px 0 30px;
+  overflow:hidden;
+  position: relative;
+
+  .customNavigation {
+    .btn {
+      position: absolute;
+      top: 50%;
+      background-color: $blue_color;
+      color: #fff;
+      font-size: 35px;
+      display: inline-block;
+      margin-top: -35px;
+      height: 70px;
+      width: 70px;
+      line-height: 57px;
+      text-align: center;
+      border-radius: 100px;
+      z-index: 5;
+    overflow:hidden;
+    }
+    .prev {
+      left: -35px;
+      text-indent: 14px;
+    }
+    .next {
+      right: -30px;
+      text-indent: -14px;
+    }
+  }
+  .carousel-indicators {
+    bottom: -50px;
+  }
+}
+
+@media (max-width: 1200px) {
+  #aktualnosci .row {
+    .ciekawostki-item {
+      height: 400px;
+      img {
+        min-height: 450px;
+      }
+    }
+    .ciekawostki-caption {
+      bottom: -330px;
+      h2 {
+        font-size: 20px;
+      }
+    }
+    .ciekawostki-item:hover .ciekawostki-caption {
+      background: rgba(0, 0, 0, 0.85);
+    }
+  }
+}
+
+@media (max-width: 970px) {
+  #aktualnosci .row {
+    .ciekawostki-item {
+      height: 350px;
+      img {
+        min-height: 350px;
+      }
+    }
+    .ciekawostki-caption {
+      bottom: -280px;
+    }
+  }
+}
+
+/*______________________________________________________________*/
+/****************** CIEKAWOSTKI */
+
 #ciekawostki {
   padding: 100px 0 30px;
   overflow:hidden;
