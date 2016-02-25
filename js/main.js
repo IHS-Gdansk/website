@@ -31,7 +31,7 @@ jQuery(function($) {'use strict';
                 .eq(i).addClass('active');
             }
         })
-    };
+    }
 
 
     // accordian
@@ -43,93 +43,8 @@ jQuery(function($) {'use strict';
          $(this).closest('.panel-heading').toggleClass('active');
     });
 
-    //Slider
-    $(document).ready(function() {
-        var time = 7; // time in seconds
-
-         var $progressBar,
-          $bar,
-          $elem,
-          isPause,
-          tick,
-          percentTime;
-
-        //Init the carousel
-        $("#main-slider").find('.owl-carousel').owlCarousel({
-          slideSpeed : 500,
-          paginationSpeed : 500,
-          singleItem : true,
-          navigation : true,
-            navigationText: [
-            "<i class='fa fa-angle-left'></i>",
-            "<i class='fa fa-angle-right'></i>"
-            ],
-          afterInit : progressBar,
-          afterMove : moved,
-          startDragging : pauseOnDragging,
-          //autoHeight : true,
-          transitionStyle : "fadeUp"
-        });
-
-        //Init progressBar where elem is $("#owl-demo")
-        function progressBar(elem){
-          $elem = elem;
-          //build progress bar elements
-          buildProgressBar();
-          //start counting
-          start();
-        }
-
-        //create div#progressBar and div#bar then append to $(".owl-carousel")
-        function buildProgressBar(){
-          $progressBar = $("<div>",{
-            id:"progressBar"
-          });
-          $bar = $("<div>",{
-            id:"bar"
-          });
-          $progressBar.append($bar).appendTo($elem);
-        }
-
-        function start() {
-          //reset timer
-          percentTime = 0;
-          isPause = false;
-          //run interval every 0.01 second
-          tick = setInterval(interval, 10);
-        };
-
-        function interval() {
-          if(isPause === false){
-            percentTime += 1 / time;
-            $bar.css({
-               width: percentTime+"%"
-             });
-            //if percentTime is equal or greater than 100
-            if(percentTime >= 100){
-              //slide to next item
-              $elem.trigger('owl.next')
-            }
-          }
-        }
-
-        //pause while dragging
-        function pauseOnDragging(){
-          isPause = true;
-        }
-
-        //moved callback
-        function moved(){
-          //clear interval
-          clearTimeout(tick);
-          //start again
-          start();
-        }
-    });
-
     //Initiat WOW JS
     new WOW().init();
-
 
     $(document).ready(function() {
         //Animated Progress
@@ -173,9 +88,9 @@ jQuery(function($) {'use strict';
     });
 
 
-    var owl = $("#owl-ciekawostki");
-
-    owl.owlCarousel({
+    var owlCiekawostki = $("#owl-ciekawostki");
+    owlCiekawostki.owlCarousel({
+        autoPlay : true,
         items : 4, //10 items above 1000px browser width
         itemsDesktop : [1400,3], //5 items between 1000px and 901px
         itemsDesktopMedium : [1000,2], //5 items between 1000px and 901px
@@ -185,19 +100,31 @@ jQuery(function($) {'use strict';
     });
 
     // Custom Navigation Events
-    $(".next").click(function(){
-      owl.trigger('owl.next');
-    })
-    $(".prev").click(function(){
-      owl.trigger('owl.prev');
-    })
-    $(".play").click(function(){
-      owl.trigger('owl.play',1000); //owl.play event accept autoPlay speed as second parameter
-    })
-    $(".stop").click(function(){
-      owl.trigger('owl.stop');
-    })
+    $(".ciekawostki-next").click(function(){
+      owlCiekawostki.trigger('owl.next');
+    });
+    $(".ciekawostki-prev").click(function(){
+      owlCiekawostki.trigger('owl.prev');
+    });
 
+
+    var owlAktualnosci = $("#owl-aktualnosci");
+    owlAktualnosci.owlCarousel({
+        items : 4, //10 items above 1000px browser width
+        itemsDesktop : [1400,3], //5 items between 1000px and 901px
+        itemsDesktopMedium : [1000,2], //5 items between 1000px and 901px
+        itemsDesktopSmall : [900,1], // betweem 900px and 601px
+        itemsTablet: [600,1], //2 items between 600 and 0
+        itemsMobile : false // itemsMobile disabled - inherit from itemsTablet option
+    });
+
+    // Custom Navigation Events
+    $(".aktualnosci-next").click(function(){
+      owlAktualnosci.trigger('owl.next');
+    });
+    $(".aktualnosci-prev").click(function(){
+      owlAktualnosci.trigger('owl.prev');
+    });
 
 
     $('.jumbotron h1')
@@ -237,7 +164,7 @@ jQuery(function($) {'use strict';
         google.maps.event.addDomListener(window, 'resize', function() {
             var center = map.getCenter();
             google.maps.event.trigger(map, 'resize');
-            map.setCenter(center); 
+            map.setCenter(center);
         });
         var marker = new google.maps.Marker({
             position: myLatlng,
