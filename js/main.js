@@ -91,11 +91,11 @@ jQuery(function($) {'use strict';
     var owlCiekawostki = $("#owl-ciekawostki");
     owlCiekawostki.owlCarousel({
         autoPlay : true,
-        items : 4, //10 items above 1000px browser width
-        itemsDesktop : [1400,3], //5 items between 1000px and 901px
-        itemsDesktopMedium : [1000,2], //5 items between 1000px and 901px
-        itemsDesktopSmall : [900,1], // betweem 900px and 601px
-        itemsTablet: [600,1], //2 items between 600 and 0
+        items : 4, //10 items above 1400px browser width
+        itemsDesktop : [1400,3], //3 items between 1400px and 1001px
+        itemsDesktopMedium : [1000,2], //2 items between 1000px and 901px
+        itemsDesktopSmall : [900,1], //1 item betweem 900px and 601px
+        itemsTablet: [600,1], //1 item between 600 and 0
         itemsMobile : false // itemsMobile disabled - inherit from itemsTablet option
     });
 
@@ -110,11 +110,11 @@ jQuery(function($) {'use strict';
 
     var owlAktualnosci = $("#owl-aktualnosci");
     owlAktualnosci.owlCarousel({
-        items : 4, //10 items above 1000px browser width
-        itemsDesktop : [1400,3], //5 items between 1000px and 901px
-        itemsDesktopMedium : [1000,2], //5 items between 1000px and 901px
-        itemsDesktopSmall : [900,1], // betweem 900px and 601px
-        itemsTablet: [600,1], //2 items between 600 and 0
+        items : 3, //10 items above 1400px browser width
+        itemsDesktop : [1400,3], //3 items between 1400px and 1001px
+        itemsDesktopMedium : [1000,2], //2 items between 1000px and 901px
+        itemsDesktopSmall : [900,1], //1 item betweem 900px and 601px
+        itemsTablet: [600,1], //1 item between 600 and 0
         itemsMobile : false // itemsMobile disabled - inherit from itemsTablet option
     });
 
@@ -125,7 +125,6 @@ jQuery(function($) {'use strict';
     $(".aktualnosci-prev").click(function(){
       owlAktualnosci.trigger('owl.prev');
     });
-
 
     $('.jumbotron h1')
       .textillate({ in: { effect: 'flipInY' } });

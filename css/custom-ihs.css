@@ -90,28 +90,6 @@
       color: #272727; }
 
 /*______________________________________________________________*/
-/****************** KARUZELA */
-#owl-ciekawostki .item {
-  padding: 30px 0px;
-  margin: 10px;
-  color: #FFF;
-  -webkit-border-radius: 3px;
-  -moz-border-radius: 3px;
-  border-radius: 3px;
-  text-align: left; }
-
-.customNavigation {
-  text-align: center; }
-
-.customNavigation a {
-  -webkit-user-select: none;
-  -khtml-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  -webkit-tap-highlight-color: rgba(0, 0, 0, 0); }
-
-/*______________________________________________________________*/
 /****************** PROCES*/
 #proces {
   padding: 100px 0 50px;
@@ -219,12 +197,10 @@
       left: 40%;
       font-size: 100px; } }
 /*______________________________________________________________*/
-/****************** AKTUALNOSCI */
-#aktualnosci {
-  padding: 100px 0 30px;
-  overflow: hidden;
-  position: relative; }
-  #aktualnosci .customNavigation .btn {
+/****************** OWL CAROUSEL */
+.customNavigation {
+  text-align: center; }
+  .customNavigation .btn {
     position: absolute;
     top: 50%;
     background-color: #00a9cb;
@@ -238,20 +214,40 @@
     text-align: center;
     border-radius: 100px;
     z-index: 5;
-    overflow: hidden; }
-  #aktualnosci .customNavigation .prev {
+    overflow: hidden;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0); }
+  .customNavigation .prev {
     left: -35px;
     text-indent: 14px; }
-  #aktualnosci .customNavigation .next {
+  .customNavigation .next {
     right: -30px;
     text-indent: -14px; }
+
+/*______________________________________________________________*/
+/****************** AKTUALNOSCI */
+#aktualnosci {
+  padding: 100px 0 30px;
+  overflow: hidden;
+  position: relative; }
   #aktualnosci .carousel-indicators {
     bottom: -50px; }
+  #aktualnosci .item {
+    padding: 30px 0px;
+    margin: 10px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    text-align: left; }
 
 @media (max-width: 1200px) {
-  #aktualnosci .row .ciekawostki-item {
+  #aktualnosci .row .item {
     height: 400px; }
-    #aktualnosci .row .ciekawostki-item img {
+    #aktualnosci .row .item img {
       min-height: 450px; }
   #aktualnosci .row .ciekawostki-caption {
     bottom: -330px; }
@@ -272,29 +268,16 @@
   padding: 100px 0 30px;
   overflow: hidden;
   position: relative; }
-  #ciekawostki .customNavigation .btn {
-    position: absolute;
-    top: 50%;
-    background-color: #00a9cb;
-    color: #fff;
-    font-size: 35px;
-    display: inline-block;
-    margin-top: -35px;
-    height: 70px;
-    width: 70px;
-    line-height: 57px;
-    text-align: center;
-    border-radius: 100px;
-    z-index: 5;
-    overflow: hidden; }
-  #ciekawostki .customNavigation .prev {
-    left: -35px;
-    text-indent: 14px; }
-  #ciekawostki .customNavigation .next {
-    right: -30px;
-    text-indent: -14px; }
   #ciekawostki .carousel-indicators {
     bottom: -50px; }
+  #ciekawostki .item {
+    padding: 30px 0px;
+    margin: 10px;
+    color: #FFF;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    text-align: left; }
 
 @media (max-width: 1200px) {
   #ciekawostki .row .ciekawostki-item {
