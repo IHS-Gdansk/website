@@ -346,41 +346,6 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
     text-align: left;
   }  
 }
-
-@media (max-width: 1200px) {
-  #aktualnosci .row {
-    .item {
-      height: 400px;
-      img {
-        min-height: 450px;
-      }
-    }
-    .ciekawostki-caption {
-      bottom: -330px;
-      h2 {
-        font-size: 20px;
-      }
-    }
-    .ciekawostki-item:hover .ciekawostki-caption {
-      background: rgba(0, 0, 0, 0.85);
-    }
-  }
-}
-
-@media (max-width: 970px) {
-  #aktualnosci .row {
-    .ciekawostki-item {
-      height: 350px;
-      img {
-        min-height: 350px;
-      }
-    }
-    .ciekawostki-caption {
-      bottom: -280px;
-    }
-  }
-}
-
 /*______________________________________________________________*/
 /****************** CIEKAWOSTKI */
 
@@ -405,34 +370,22 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
 
 @media (max-width: 1200px) {
   #ciekawostki .row {
-    .ciekawostki-item {
+    .item {
       height: 400px;
       img {
         min-height: 450px;
       }
-    }
-    .ciekawostki-caption {
-      bottom: -330px;
-      h2 {
-        font-size: 20px;
-      }
-    }
-    .ciekawostki-item:hover .ciekawostki-caption {
-      background: rgba(0, 0, 0, 0.85);
     }
   }
 }
 
 @media (max-width: 970px) {
   #ciekawostki .row {
-    .ciekawostki-item {
+    .item {
       height: 350px;
       img {
         min-height: 350px;
       }
-    }
-    .ciekawostki-caption {
-      bottom: -280px;
     }
   }
 }

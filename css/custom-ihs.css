@@ -244,24 +244,6 @@
     border-radius: 3px;
     text-align: left; }
 
-@media (max-width: 1200px) {
-  #aktualnosci .row .item {
-    height: 400px; }
-    #aktualnosci .row .item img {
-      min-height: 450px; }
-  #aktualnosci .row .ciekawostki-caption {
-    bottom: -330px; }
-    #aktualnosci .row .ciekawostki-caption h2 {
-      font-size: 20px; }
-  #aktualnosci .row .ciekawostki-item:hover .ciekawostki-caption {
-    background: rgba(0, 0, 0, 0.85); } }
-@media (max-width: 970px) {
-  #aktualnosci .row .ciekawostki-item {
-    height: 350px; }
-    #aktualnosci .row .ciekawostki-item img {
-      min-height: 350px; }
-  #aktualnosci .row .ciekawostki-caption {
-    bottom: -280px; } }
 /*______________________________________________________________*/
 /****************** CIEKAWOSTKI */
 #ciekawostki {
@@ -280,23 +262,15 @@
     text-align: left; }
 
 @media (max-width: 1200px) {
-  #ciekawostki .row .ciekawostki-item {
+  #ciekawostki .row .item {
     height: 400px; }
-    #ciekawostki .row .ciekawostki-item img {
-      min-height: 450px; }
-  #ciekawostki .row .ciekawostki-caption {
-    bottom: -330px; }
-    #ciekawostki .row .ciekawostki-caption h2 {
-      font-size: 20px; }
-  #ciekawostki .row .ciekawostki-item:hover .ciekawostki-caption {
-    background: rgba(0, 0, 0, 0.85); } }
+    #ciekawostki .row .item img {
+      min-height: 450px; } }
 @media (max-width: 970px) {
-  #ciekawostki .row .ciekawostki-item {
+  #ciekawostki .row .item {
     height: 350px; }
-    #ciekawostki .row .ciekawostki-item img {
-      min-height: 350px; }
-  #ciekawostki .row .ciekawostki-caption {
-    bottom: -280px; } }
+    #ciekawostki .row .item img {
+      min-height: 350px; } }
 /*______________________________________________________________*/
 /****************** NARZEDZIA */
 #narzedzia {
