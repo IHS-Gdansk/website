@@ -69,7 +69,7 @@
                         <li class="slowscroll scroll"><a href="#produkty">Produkty</a></li>
                         <li class="slowscroll scroll"><a href="#ludzie">Ludzie</a></li>
                         <li class="slowscroll scroll"><a href="#kariera">Kariera</a></li>
-                        <li class="slowscroll scroll"><a href="#news">Aktualności</a></li>
+                        <li class="slowscroll scroll"><a href="#aktualnosci">Aktualności</a></li>
                         <li class="slowscroll scroll"><a href="#ciekawostki">Ciekawostki</a></li>
                         <li class="slowscroll scroll"><a href="#narzedzia">Narzędzia</a></li>
                         <li class="slowscroll scroll"><a href="#kontakt">Kontakt</a></li>
@@ -586,7 +586,7 @@
                             <h4>Bożena Miszewska</h4>
                             <span>Software Engineer</span>
                         </div>
-                        <p>Pracuje w Data Integration Team, działa również w lokalnym zespole "Sustainability"</p>
+                        <p>Pracuje w Data Integration Team, działa również w lokalnym zespole &#8222;Sustainability&#8221;</p>
                         <ul class="social-icons">
                             <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
                             <li><a href="#"><i class="fa fa-twitter"></i></a></li>
@@ -811,8 +811,8 @@
                 <div class="col-sm-9 wow fadeInRight">
                     <h4><i class="fa fa-graduation-cap"></i>Od Ciebie oczekujemy:</h4>
                     <ul>
-                        <li>minimum 2 lata doświadczenia w testowaniu lub programowaniu</li>
-                        <li>doświadczenie w tworzeniu i utrzymywaniu testow automatycznych</li>
+                        <li>minimum 2 lat doświadczenia w testowaniu lub programowaniu</li>
+                        <li>doświadczenia w tworzeniu i utrzymywaniu testów automatycznych</li>
                         <li>umiejetności monitorowania, wyszukiwania i obsługi błędów systemów informatycznych</li>
                         <li>doświadczenia w opracowywaniu dokumentacji oraz scenariuszy testowych uwzględniających przewidywane </li>„ścieżki krytyczne”</li>
                         <li>znajomości testów funkcjonalnych (jednostkowych, integracyjnych) i testów regresji</li>
@@ -864,48 +864,74 @@
             </div>
         </div>
     </section>
-    <section id="news">
+    <section id="aktualnosci" >
         <div class="container">
-            <div class="section-header">
-                <h2 class="section-title text-center wow fadeInDown">Aktualności</h2>
+            <div class="section-header  wow fadeInDown">
+                <h2 class="section-title text-center">Aktualności</h2>
                 <p class="text-center wow fadeInDown"></p>
             </div>
             <div class="row">
-                <div class="col-xs-12 col-sm-4 wow fadeInUp">
-                    <h3 class="column-title">IHS Tech Conf</h3>
-                    <img src="images/articles/2015.08/ihs_tech_conf/02.jpg" class="img-responsive" alt="IHS Tech Conf">
-                    <p>28 sierpnia 2015 roku po raz kolejny zorganizowaliśmy wewnętrzną konferencję dla pracowników firmy IHS.</p>
-                    <p>Wydarzenie miało miejsce w jednej z sal Multikina w&nbsp;Gdańsku i wzięło w nim udział ok. 140 pracowników, w&nbsp;tym założyciel naszego biura &mdash; Andrzej Dostatni, oraz przełożony Andrzeja — Randy Harvey.</p>
-                    <p>
-                        Była to pierwsza edycja naszej konferencji, która odbyła się w sali kinowej i, jak się okazało, był to strzał w&nbsp;dziesiątkę, gdyż wiele osób zwracało uwagę na znakomitą widoczność ogromnego ekranu, a także większe skupienie uzyskane
-                        dzięki nastrojowej atmosferze sali kinowej.
-                    </p>
-                    <p>
-                        <a class="btn btn-primary" href="#" data-toggle="modal" data-target="#modalNews1">Czytaj więcej</a>
-                    </p>
+                <div id="owl-aktualnosci" class="owl-carousel owl-theme wow fadeInUp">
+                    <div class="item">
+                            <h3 class="column-title">Lambda Days 2016</h3>
+                            <img src="images/aktualnosci/lambdadays2016/lambda.png" class="img-responsive" alt="Hack Swift">
+                            <p>
+                                W dniach <strong>18&ndash;19 lutego 2016 roku</strong> w Krakowie odbyła się kolejna edycja <strong>Lambda Days</strong> - konferencji poświęconej szeroko pojętym zagadnieniom związanym z funkcyjnymi językami programowania. Pięcioosobowa delegacja IHS Global dzielnie udała się transportem kolejowym, aby uczestniczyć w konferencji.
+                            </p>
+                            <p>
+                                <a class="btn btn-primary" href="#" data-toggle="modal" data-target="#lambdadays2016">Czytaj więcej</a>
+                            </p>
+                    </div>
+                    <div class="item">
+                            <h3 class="column-title">Property Based Testing with F#</h3>
+                            <img src="images/articles/2015.10/property_based_testing/2015-10-07 0010.jpg" class="img-responsive" alt="PBT w/ F#">
+                            <p>
+                                W ramach regularnych spotkań pod nazwą "Akademia Messera", 7 października 2015 pracownicy IHS Global mieli okazję posłuchać o alternatywnym podejściu do popularnych Unit Testów. Tomasz Heimowski opowiedział o Property Based Testing z wykorzystaniem języka F#.
+                            </p>
+                            <p>
+                                <a class="btn btn-primary" href="#" data-toggle="modal" data-target="#modalNews4">Czytaj więcej</a>
+                            </p>
+                    </div>
+                    <div class="item">
+                            <h3 class="column-title">HackSwift czyli koduj dla Vadera</h3>
+                            <img src="images/articles/2015.10/hack_swift/hack_swift.jpg" class="img-responsive" alt="Hack Swift">
+                            <p>
+                                <strong>5 października 2015 roku</strong> odbył się już trzeci hackaton z&nbsp;technologiami mobilnymi. Po dwóch, ciężkich przeprawach z Xamarinem, tym razem na warsztat wzięliśmy niedawny wytwór ekipy z Cupertino czyli język <strong>Swift</strong>. Oprócz zespołu Connect4mobile, który
+                                organizował to wydarzenie, udział wzięli goście z temu Phoenix, Connect a także jedna osoba z działu SQA.
+                            </p>
+                            <p>
+                                <a class="btn btn-primary" href="#" data-toggle="modal" data-target="#modalNews3">Czytaj więcej</a>
+                            </p>
+                    </div>
+                    <div class="item">
+                            <h3 class="column-title">Recenzja DevDay 2015</h3>
+                            <img src="images/articles/2015.10/recenzja_dev_day/logo.jpg" class="img-responsive" alt="Dev Day">
+                            <p>
+                                W dniach <strong>17&ndash;18 września 2015 roku</strong> po raz kolejny odbyła się konferencja <strong>DevDay</strong>. Jak co roku wiele osób z naszej firmy zostało wysłanych w delegację w poszukiwaniu nowej wiedzy, technologii i zajawek. Część osób wyruszyła do Krakowa
+                                już w poranek w przeddzień konferencji, żeby móc przy okazji wziąć udział w&nbsp;spotkaniu krakowskiej grupy .NET oraz spotkać się z&nbsp;kolegami z branży poznanymi na poprzednich konferencjach.
+                            </p>
+                            <p>
+                                <a class="btn btn-primary" href="#" data-toggle="modal" data-target="#modalNews2">Czytaj więcej</a>
+                            </p>
+                    </div>                    
+                    <div class="item">
+                            <h3 class="column-title">IHS Tech Conf</h3>                    
+                            <img src="images/articles/2015.08/ihs_tech_conf/02.jpg" class="img-responsive" alt="IHS Tech Conf">
+                            <p><strong>28 sierpnia 2015 roku</strong> po raz kolejny zorganizowaliśmy wewnętrzną konferencję dla pracowników firmy IHS.</p>
+                            <p>Wydarzenie miało miejsce w jednej z sal Multikina w&nbsp;Gdańsku i wzięło w nim udział ok. 140 pracowników, w&nbsp;tym założyciel naszego biura &mdash; Andrzej Dostatni, oraz przełożony Andrzeja — Randy Harvey.</p>
+                            <p>
+                                Była to pierwsza edycja naszej konferencji, która odbyła się w sali kinowej i, jak się okazało, był to strzał w&nbsp;dziesiątkę, gdyż wiele osób zwracało uwagę na znakomitą widoczność ogromnego ekranu, a także większe skupienie uzyskane
+                                dzięki nastrojowej atmosferze sali kinowej.
+                            </p>
+                            <p>
+                                <a class="btn btn-primary" href="#" data-toggle="modal" data-target="#modalNews1">Czytaj więcej</a>
+                            </p>
+                    </div>
                 </div>
-                <div class="col-xs-12 col-sm-4 wow fadeInUp">
-                    <h3 class="column-title">Recenzja DevDay 2015</h3>
-                    <img src="images/articles/2015.10/recenzja_dev_day/logo.jpg" class="img-responsive" alt="Dev Day">
-                    <p>
-                        W dniach 17&ndash;18 września 2015 roku po raz kolejny odbyła się konferencja DevDay. Jak co roku wiele osób z naszej firmy zostało wysłanych w delegację w poszukiwaniu nowej wiedzy, technologii i zajawek. Część osób wyruszyła do Krakowa
-                        już w poranek w przeddzień konferencji, żeby móc przy okazji wziąć udział w&nbsp;spotkaniu krakowskiej grupy .NET oraz spotkać się z&nbsp;kolegami z branży poznanymi na poprzednich konferencjach.
-                    </p>
-                    <p>
-                        <a class="btn btn-primary" href="#" data-toggle="modal" data-target="#modalNews2">Czytaj więcej</a>
-                    </p>
-                </div>
-                <div class="col-xs-12 col-sm-4 wow fadeInUp">
-                    <h3 class="column-title">HackSwift czyli koduj dla Vadera</h3>
-                    <img src="images/articles/2015.10/hack_swift/hack_swift.jpg" class="img-responsive" alt="Hack Swift">
-                    <p>
-                        5 października 2015 odbył się już trzeci hackaton z&nbsp;technologiami mobilnymi. Po dwóch, ciężkich przeprawach z Xamarinem, tym razem na warsztat wzięliśmy niedawny wytwór ekipy z Cupertino czyli język Swift. Oprócz zespołu Connect4mobile, który
-                        organizował to wydarzenie, udział wzięli goście z temu Phoenix, Connect a także jedna osoba z działu SQA.
-                    </p>
-                    <p>
-                        <a class="btn btn-primary" href="#" data-toggle="modal" data-target="#modalNews3">Czytaj więcej</a>
-                    </p>
-                </div>
+            </div>
+            <div class="customNavigation">
+                <a class="btn aktualnosci-prev prev"><i class="fa fa-angle-left"></i></a>
+                <a class="btn aktualnosci-next next"><i class="fa fa-angle-right"></i></a>
             </div>
         </div>
     </section>
@@ -978,7 +1004,7 @@
             <div class="item">
                 <img src="images/ciekawostki/10.jpg" class="img-responsive" alt="Responsive image">
                 <h3>Drużyna Piłkarska</h3>
-                <p>Wszystkich chętnych dział SQA zaprasza do udziału w&nbsp;cotygodniowych treningach piłkarskich na sztucznej murawie na dworze. Boisko znajduje się na Morenie na terenie szkoły, gramy co tydzień w środy o 16.00. Dojazd na boisko zwykle organizujemy wspólnie. Kolejne treningi zaczynamy po przerwie ziomowej zwykle już w marcu. Bardziej szczegółowych informacji udzielamy w pokoju testerów.</p>
+                <p>Wszystkich chętnych dział SQA zaprasza do udziału w&nbsp;cotygodniowych treningach piłkarskich na sztucznej murawie na dworze. Boisko znajduje się na Morenie na terenie szkoły, gramy co tydzień w środy o 16.00. Dojazd na boisko zwykle organizujemy wspólnie. Kolejne treningi zaczynamy po przerwie zimowej zwykle już w marcu. Bardziej szczegółowych informacji udzielamy w pokoju testerów.</p>
             </div>
 
             <div class="item">
@@ -1025,8 +1051,8 @@
         </div>
 
         <div class="customNavigation">
-            <a class="btn prev"><i class="fa fa-angle-left"></i></a>
-            <a class="btn next"><i class="fa fa-angle-right"></i></a>
+            <a class="btn ciekawostki-prev prev"><i class="fa fa-angle-left"></i></a>
+            <a class="btn ciekawostki-next next"><i class="fa fa-angle-right"></i></a>
         </div>
     </section>
 
@@ -1715,6 +1741,45 @@
         </div>
     </div>
 
+    <div class="modal fade" id="modalNews4" tabindex="-1" role="dialog" aria-labelledby="Launch modal window">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    <h4 class="modal-title">Property Based Testing with F#</h4>
+                </div>
+                <div class="modal-body">
+                    <p>
+                        W ramach regularnych spotkań pod nazwą "Akademia Messera", 7 października 2015 pracownicy IHS Global mieli okazję posłuchać o alternatywnym podejściu do popularnych Unit Testów. Tomasz Heimowski opowiedział o Property Based Testing z wykorzystaniem języka F#.
+                    </p>
+                    <p class="text-center">
+                        <img src="images/articles/2015.10/property_based_testing/2015-10-07 0010.jpg" class="img img-responsive img-thumbnail" alt="PBT w/ F# image 0" />
+                    </p>
+                    <p>
+                        Property Based Testing jest bardzo ciekawym zagadnieniem, dzięki któremu można automatycznie wykryć skrajne przypadki powodujące nieprawidłowe działanie naszego programu. Dzieje się tak poprzez zastąpienie standardowej (dla Unit Testów) fazy "Assert" generatorem danych wejściowych.
+                    </p>
+                    <p>
+                        Podczas prezentacji zostały podkreślone 2 problemy Unit Testów: brak gwarancji poprawności oraz ilość kodu przygotowującego dane testowe. Problemy te adresuje Property Based Testing, dzięki któremu zyskujemy znacznie większe pokrycie testowe przy mniejszej ilości kodu.
+                    </p>
+                    <p class="text-center">
+                        <img src="images/articles/2015.10/property_based_testing/fsharp256.PNG" class="img img-responsive img-thumbnail" alt="fsharp logo" />
+                    </p>
+                    <p>
+                        Język <a href="http://fsharp.org" target="_blank">F#</a>, w którym były zaprezentowane przykłady, jest na codzień używany w IHS w projekcie Phoenix właśnie na potrzeby testów transformaty XSLT jak i pomocnicznych skryptów projektowych.
+                        Sama idea Property Based Testing nie jest jednak ściśle związana z żadną specyficzną technologią. Biblioteki i narzędzia do testowania w ten sposób można znaleźć dla przeróżnych języków programowania i platform. 
+                    </p>
+                    <p>Prezentację można obejrzeć pod <a target="_blank" href="https://theimowski.github.io/PropertyBasedTestsWithFSharp/">tym adresem</a>.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" data-dismiss="modal">Zamknij</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
     <div class="modal fade" id="modalNews3" tabindex="-1" role="dialog" aria-labelledby="Launch modal window">
         <div class="modal-dialog modal-lg" role="document">
             <div class="modal-content">
@@ -1762,6 +1827,51 @@
         </div>
     </div>    
     
+<div class="modal fade" id="lambdadays2016" tabindex="-1" role="dialog" aria-labelledby="Launch modal window">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    <h4 class="modal-title">Lambda Days 2016</h4>
+                </div>
+                <div class="modal-body">
+                    <p>
+                        W dniach <strong>18-19 lutego 2016 roku</strong> w Krakowie odbyła się kolejna edycja LambdaDays - konferencji poświęconej szeroko pojętym zagadnieniom związanym z funkcyjnymi językami programowania. Pięcioosobowa delegacja IHS Global dzielnie udała się transportem kolejowym, aby uczestniczyć w konferencji.
+                    </p>
+                    <p class="text-center">
+                        <img src="images/aktualnosci/lambdadays2016/informatycy.jpg" class="img img-responsive img-thumbnail" alt="Delegacja na Lambda Days 2016" />
+                    </p>
+                    <p>Jak co roku na Lambda days pojawiło się sporo ciekawych prelengentów, związanych ze światem programowania funkcyjnego. Przybyli między innymi : José Valim - twórca języka Elixir, Philip Wadler - jeden z ojców założycieli Haskella, Bruce Tate - polyglot programmer, autor np. Seven Languages in Seven Weeks, Robert Virding - współtwórca Erlang’a. Jako, że informacja o mówcach uczestniczących w prezentacji oraz tematach ich prezentacji była dostępna odpowiednio wcześniej wszyscy niecierpliwie oczekiwali rozpoczęcia się konferencji.</p>
+                    <p>Pierwszy dzień rozpoczął się znakomitym keynotem jednego z twórców Haskella - Philipa Wadlera, który wykazał, że kosmici o ile programują to na pewno programują funkcyjnie.</p>
+                    <p class="text-center">
+                        <img src="images/aktualnosci/lambdadays2016/waddler1.jpg" class="img img-responsive img-thumbnail" alt="Lambda Days 2016" />
+                    </p>
+                    <p>Phil dowodzi, że języki funkcyjne mogą być rozumiane nie tylko w naszym wszechświecie, ale również we wszystkich wszechświatach równoległych.</p>
+                    <p class="text-center">
+                        <img src="images/aktualnosci/lambdadays2016/waddler2.jpg" class="img img-responsive img-thumbnail" alt="Lambda Days 2016" />
+                    </p>
+                    <p>Związki programowania funkcyjnego z matematyką, w szczególności teorią kategorii czy rachunkiem lambda omawiane były w trakcie wielu prezentacji od w/w keynotu począwszy na końcowym keynocie Bartosza Milewskiego skończywszy.</p>
+                    <p>Konferencja miała trzy tzw. "tracki", z których jeden został oznaczony, jako "research" i skupiony był na zagadnieniach stricte technicznych.
+                    Zagadnienia techniczne obracały się wokół F#, języków działających na maszynie wirtualnej Erlanga, innych języków funkcyjnych, programowania funkcyjnego w przeglądarce oraz programowania reaktywnego. Wielu prezenterów i uczestników deklarowało codzienne wykorzystywanie programowania funkcyjnego w komercyjnych projektach i trend wydaje się być niezmiennie rosnący.
+                    Jak na dobrą funkcyjną konferencję przystało, nie zabrakło tam oczywiście Haskella:</p>
+                    <ul>
+                    <li>John Hughes, jeden z twórców Haskella i twórca QuickChecka, opowiedział o testowaniu zawiłości mechanizmów Dropboxa QuickCheckiem przy użycia property based testingu. Utworzenie modelu odwzorowującego zachowania serwisu i wykazującego różne “dziwne” zachowania nie było proste, jednak pionier Haskella pokazał, co udało mu się osiągnąć. Warto nadmienić, że w tym procesie zostało wykrytych kilka bugów, które zostały zaraportowane do Dropboxa (który to, podobno, podziękował i naprawił). John pokazał, że nawet jesli nie chcemy używać Haskella do pisania kodu produkcyjnego, może to być świetne narzędzie do testowania naszych systemów.</li>
+                    <li>Lech Głowiak, zmóżdżył się nad tym jak pożenić JVM z Haskellem, odkrywając język Fregre, o czym dogłębnie opowiedział na swojej prezentacji “Getting started with Frege”. Jeśli jesteś programistą Javy, wiedz że nie jesteś skazany na brak implementacji konceptów funkcyjnych - spróbuj użyć Frege!</li>
+                    <li>Michał Płachta postanowił pożenić Haskella, tym razem z Elmem, co według mnie stanowi bardzo ciekawe połączenie dwóch czysto funkcyjnych języków. Zaskakując nas paroma ciekawymi monadami, niezrozumiałymi parametrami przedstawił jak mógłby wyglądać prosty w pełni funkcyjny stack.</li>
+                    </ul>
+                    <p>Konferencja odbyła się w Audytorium Maximum Uniwersytetu Jagiellońskiego. Wykorzystywane były sale mniejszego rozmiaru, jednakże dało się to odczuć tylko w trakcie kilku najbardziej popularnych prezentacji, gdzie spóźnialscy zmuszeni byli do oglądania wykładu siedząc na schodach. Organizacja była bardzo dobra, choć niektórzy, co bardziej mięsożerni koledzy narzekali na małą ilość mięsa w posiłkach. Na szczęście sponsorowane przez firmę Scalac napoje energetyczne w lambda-stylizowanych puszkach dostarczały wszystkich składników odżywczych wymaganych przez rasowych programistów. Jedynie programiści Ruby nie mogli skorzystać z oferty gdyż zgodnie z ostrzeżeniem na puszce napój z językiem Ruby nie był kompatybilny.</p>
+                    <p>Konferencja była też świetnym miejscem na spotkanie ludzi, nie tylko prelengentów, którzy na codzień wykorzystują programowanie funkcyjne. Była to więć świetna okazja do wymienienia spostrzeżeń i przemyśleń.</p>
+                    <p>Podsumowując była to dobrze zorganizowana konferencja, przy odrobinie szczęścia w doborze "tracków" zapewniająca solidną dawkę niezłych prezentacji i na pewno IHS Global wyśle swoich zwiadowców na Lambda days 2017.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" data-dismiss="modal">Zamknij</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <script src="js/jquery.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/owl.carousel.min.js"></script>

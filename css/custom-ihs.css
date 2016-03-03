@@ -90,28 +90,6 @@
       color: #272727; }
 
 /*______________________________________________________________*/
-/****************** KARUZELA */
-#owl-ciekawostki .item {
-  padding: 30px 0px;
-  margin: 10px;
-  color: #FFF;
-  -webkit-border-radius: 3px;
-  -moz-border-radius: 3px;
-  border-radius: 3px;
-  text-align: left; }
-
-.customNavigation {
-  text-align: center; }
-
-.customNavigation a {
-  -webkit-user-select: none;
-  -khtml-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  -webkit-tap-highlight-color: transparent; }
-
-/*______________________________________________________________*/
 /****************** PROCES*/
 #proces {
   padding: 100px 0 50px;
@@ -219,12 +197,10 @@
       left: 40%;
       font-size: 100px; } }
 /*______________________________________________________________*/
-/****************** CIEKAWOSTKI */
-#ciekawostki {
-  padding: 100px 0 30px;
-  overflow: hidden;
-  position: relative; }
-  #ciekawostki .customNavigation .btn {
+/****************** OWL CAROUSEL */
+.customNavigation {
+  text-align: center; }
+  .customNavigation .btn {
     position: absolute;
     top: 50%;
     background-color: #00a9cb;
@@ -238,34 +214,63 @@
     text-align: center;
     border-radius: 100px;
     z-index: 5;
-    overflow: hidden; }
-  #ciekawostki .customNavigation .prev {
+    overflow: hidden;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0); }
+  .customNavigation .prev {
     left: -35px;
     text-indent: 14px; }
-  #ciekawostki .customNavigation .next {
+  .customNavigation .next {
     right: -30px;
     text-indent: -14px; }
+
+/*______________________________________________________________*/
+/****************** AKTUALNOSCI */
+#aktualnosci {
+  padding: 100px 0 30px;
+  overflow: hidden;
+  position: relative; }
+  #aktualnosci .carousel-indicators {
+    bottom: -50px; }
+  #aktualnosci .item {
+    padding: 30px 0px;
+    margin: 10px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    text-align: left; }
+
+/*______________________________________________________________*/
+/****************** CIEKAWOSTKI */
+#ciekawostki {
+  padding: 100px 0 30px;
+  overflow: hidden;
+  position: relative; }
   #ciekawostki .carousel-indicators {
     bottom: -50px; }
+  #ciekawostki .item {
+    padding: 30px 0px;
+    margin: 10px;
+    color: #FFF;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    text-align: left; }
 
 @media (max-width: 1200px) {
-  #ciekawostki .row .ciekawostki-item {
+  #ciekawostki .row .item {
     height: 400px; }
-    #ciekawostki .row .ciekawostki-item img {
-      min-height: 450px; }
-  #ciekawostki .row .ciekawostki-caption {
-    bottom: -330px; }
-    #ciekawostki .row .ciekawostki-caption h2 {
-      font-size: 20px; }
-  #ciekawostki .row .ciekawostki-item:hover .ciekawostki-caption {
-    background: rgba(0, 0, 0, 0.85); } }
+    #ciekawostki .row .item img {
+      min-height: 450px; } }
 @media (max-width: 970px) {
-  #ciekawostki .row .ciekawostki-item {
+  #ciekawostki .row .item {
     height: 350px; }
-    #ciekawostki .row .ciekawostki-item img {
-      min-height: 350px; }
-  #ciekawostki .row .ciekawostki-caption {
-    bottom: -280px; } }
+    #ciekawostki .row .item img {
+      min-height: 350px; } }
 /*______________________________________________________________*/
 /****************** NARZEDZIA */
 #narzedzia {
@@ -312,5 +317,3 @@
 @media (max-width: 770px) {
   #news, #ihs, #narzedzia, #kontakt, #produkty {
     padding: 40px 0 30px; } }
-
-/*# sourceMappingURL=custom-ihs.css.map */
