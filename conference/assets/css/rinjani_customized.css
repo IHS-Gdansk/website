@@ -1,0 +1,15 @@
+.dev-sharp-logo{
+	margin-left:auto;
+	margin-right:auto;
+	width:60%;
+}
+
+.navbar{
+	color: #00a8cb
+}
+
+.vcenter{
+	display: inline-block;
+    vertical-align: middle;
+    float: none;
+}
