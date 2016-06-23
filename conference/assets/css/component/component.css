@@ -44,13 +44,13 @@
 	10.8 PORTFOLIO HOVER EFFECT 8 - PUSH
 	10.9 PORTFOLIO HOVER EFFECT 9 - PUSH ROTATE
 
-11. PRICING TABLES
-	11.1 PRICING TABLES - STYLE ONE
-	11.2 PRICING TABLES - STYLE TWO
-	11.3 PRICING TABLES - STYLE THREE
-	11.4 PRICING TABLES - STYLE FOUR
-	11.5 PRICING TABLES - STYLE FIVE
-	11.6 PRICING TABLES - STYLE SIX
+11. agenda TABLES
+	11.1 agenda TABLES - STYLE ONE
+	11.2 agenda TABLES - STYLE TWO
+	11.3 agenda TABLES - STYLE THREE
+	11.4 agenda TABLES - STYLE FOUR
+	11.5 agenda TABLES - STYLE FIVE
+	11.6 agenda TABLES - STYLE SIX
 
 12. TABULAR CONTENT
 	12.1 TABULAR CONTENT - STYLE ONE
@@ -1250,31 +1250,31 @@
 
 
 /*---------------------------------------------------------------------*/
-/*  11. PRICING TABLES
+/*  11. AGENDA TABLES
 /*---------------------------------------------------------------------*/
-.pricing-table .pricing-wrapper > .pricing-column > .plan-title {
+.agenda-table .agenda-wrapper > .agenda-column > .plan-title {
   display: block;
   background-color: #1d1d1d;
   color: #fff;
 }
-.pricing-table .pricing-wrapper > .pricing-column > .plan-title > h2 {
+.agenda-table .agenda-wrapper > .agenda-column > .plan-title > h2 {
   display: block;
   margin: 0;
   height: 74px;
   line-height: 74px;
-  background-color: #1abc9c;
+  background-color: #00a8cb;
   color: #fff;
   font-size: 30px;
   font-weight: 300;
   text-transform: uppercase;
   letter-spacing: 3px;
 }
-.pricing-table .pricing-wrapper > .pricing-column > .plan-title > .pricing-box {
+.agenda-table .agenda-wrapper > .agenda-column > .plan-title > .agenda-box {
   padding: 30px;
   height: 216px;
   border-bottom: 3px solid #1abc9c;
 }
-.pricing-table .pricing-wrapper > .pricing-column > .plan-title > .pricing-box > .price {
+.agenda-table .agenda-wrapper > .agenda-column > .plan-title > .agenda-box > .price {
   position: relative;
   display: inline-block;
   padding: 0 0 0 10px;
@@ -1283,7 +1283,7 @@
   font-weight: 300;
   line-height: 100px;
 }
-.pricing-table .pricing-wrapper > .pricing-column > .plan-title > .pricing-box > .price > .symbol {
+.agenda-table .agenda-wrapper > .agenda-column > .plan-title > .agenda-box > .price > .symbol {
   position: absolute;
   top: -25px;
   left: 0;
@@ -1291,7 +1291,7 @@
   font-size: 22px;
   font-weight: 300;
 }
-.pricing-table .pricing-wrapper > .pricing-column > .plan-title > .pricing-box > .month {
+.agenda-table .agenda-wrapper > .agenda-column > .plan-title > .agenda-box > .month {
   position: relative;
   display: inline-block;
   bottom: 0px;
@@ -1300,19 +1300,19 @@
   font-weight: normal;
   color: #fff;
 }
-.pricing-table .pricing-wrapper > .pricing-column > .plan-title > .pricing-box > .price-info {
+.agenda-table .agenda-wrapper > .agenda-column > .plan-title > .agenda-box > .price-info {
   margin-top: 20px;
   font-size: 13px;
   font-style: italic;
   color: #aaa;
 }
-.pricing-table .pricing-wrapper > .pricing-column > .item-list {
+.agenda-table .agenda-wrapper > .agenda-column > .item-list {
   list-style: none;
   padding: 0;
   margin: 0;
   background-color: #fff;
 }
-.pricing-table .pricing-wrapper > .pricing-column > .item-list > li {
+.agenda-table .agenda-wrapper > .agenda-column > .item-list > li {
   display: block;
   padding: 20px 15px;
   font-size: 16px;
@@ -1321,48 +1321,48 @@
   border-bottom: 1px solid #e8e8e8;
   border-left: 1px solid #e8e8e8;
 }
-.pricing-table .pricing-wrapper > .pricing-column > .plan-footer {
+.agenda-table .agenda-wrapper > .agenda-column > .plan-footer {
   background-color: #f6f6f6;
   padding: 20px 10px;
   border-right: 1px solid #e8e8e8;
   border-bottom: 1px solid #e8e8e8;
   border-left: 1px solid #e8e8e8;
 }
-.pricing-table .pricing-wrapper.not-right-column {
+.agenda-table .agenda-wrapper.not-right-column {
   margin-bottom: 50px;
 }
 @media (min-width: 1024px) {
-  .pricing-table .pricing-wrapper.not-right-column {
+  .agenda-table .agenda-wrapper.not-right-column {
     margin-bottom: 0px;
   }
 }
 
 
 /*---------------------------------------------------------------------*/
-/*  11.1 PRICING TABLES - STYLE ONE
+/*  11.1 agenda TABLES - STYLE ONE
 /*---------------------------------------------------------------------*/
-.pricing-table.style-one {
+.agenda-table.style-one {
     
 }
 
 
 /*---------------------------------------------------------------------*/
-/*  11.2 PRICING TABLES - STYLE TWO
+/*  11.2 agenda TABLES - STYLE TWO
 /*---------------------------------------------------------------------*/
 @media (min-width: 768px) {
-  .pricing-table.style-two .pricing-wrapper {
+  .agenda-table.style-two .agenda-wrapper {
     padding: 0px;
     box-shadow: 0 0 13px rgba(0, 0, 0, 0.2);
   }
 }
 @media (min-width: 768px) {
-  .pricing-table.style-two .pricing-wrapper > .pricing-column > .item-list > li {
+  .agenda-table.style-two .agenda-wrapper > .agenda-column > .item-list > li {
     border-right: none;
     border-left: none;
   }
 }
 @media (min-width: 768px) {
-  .pricing-table.style-two .pricing-wrapper > .pricing-column > .plan-footer {
+  .agenda-table.style-two .agenda-wrapper > .agenda-column > .plan-footer {
     border-right: none;
     border-left: none;
   }
@@ -1370,77 +1370,77 @@
 
 
 /*---------------------------------------------------------------------*/
-/*  11.3 PRICING TABLES - STYLE THREE
+/*  11.3 agenda TABLES - STYLE THREE
 /*---------------------------------------------------------------------*/
 @media (min-width: 768px) {
-  .pricing-table.style-three .pricing-wrapper {
+  .agenda-table.style-three .agenda-wrapper {
     padding: 0px;
     box-shadow: 0 0 13px rgba(0, 0, 0, 0.2);
   }
 }
 @media (min-width: 1024px) {
-  .pricing-table.style-three .pricing-wrapper {
+  .agenda-table.style-three .agenda-wrapper {
     margin-top: 25px;
   }
 }
 @media (min-width: 1024px) {
-  .pricing-table.style-three .pricing-wrapper.recomended {
+  .agenda-table.style-three .agenda-wrapper.recomended {
     margin-top: 1px;
   }
 }
 @media (min-width: 768px) {
-  .pricing-table.style-three .pricing-wrapper.recomended > .pricing-column > .item-list > li {
+  .agenda-table.style-three .agenda-wrapper.recomended > .agenda-column > .item-list > li {
     border-right: none;
     border-left: none;
   }
 }
 @media (min-width: 768px) {
-  .pricing-table.style-three .pricing-wrapper.recomended > .pricing-column > .plan-footer {
+  .agenda-table.style-three .agenda-wrapper.recomended > .agenda-column > .plan-footer {
     border-right: none;
     border-left: none;
   }
 }
 @media (min-width: 1024px) {
-  .pricing-table.style-three .pricing-wrapper.recomended > .pricing-column > .plan-footer {
+  .agenda-table.style-three .agenda-wrapper.recomended > .agenda-column > .plan-footer {
     padding: 32px 10px;
   }
 }
 
 
 /*---------------------------------------------------------------------*/
-/*  11.4 PRICING TABLES - STYLE FOUR
+/*  11.4 agenda TABLES - STYLE FOUR
 /*---------------------------------------------------------------------*/
 @media (min-width: 768px) {
-  .pricing-table.style-four .pricing-wrapper {
+  .agenda-table.style-four .agenda-wrapper {
     padding: 0px;
     box-shadow: 0 0 13px rgba(0, 0, 0, 0.2);
   }
 }
 @media (min-width: 768px) {
-  .pricing-table.style-four .pricing-wrapper > .pricing-column > .item-list > li {
+  .agenda-table.style-four .agenda-wrapper > .agenda-column > .item-list > li {
     border-right: none;
     border-left: none;
   }
 }
-.pricing-table.style-four .pricing-wrapper > .pricing-column > .item-list > li > i {
+.agenda-table.style-four .agenda-wrapper > .agenda-column > .item-list > li > i {
   font-size: 20px;
 }
-.pricing-table.style-four .pricing-wrapper > .pricing-column > .item-list > li > i.fa-check {
+.agenda-table.style-four .agenda-wrapper > .agenda-column > .item-list > li > i.fa-check {
   color: #7ea95e;
 }
-.pricing-table.style-four .pricing-wrapper > .pricing-column > .item-list > li > i.fa-times {
+.agenda-table.style-four .agenda-wrapper > .agenda-column > .item-list > li > i.fa-times {
   color: #8d1c31;
 }
 @media (min-width: 768px) {
-  .pricing-table.style-four .pricing-wrapper > .pricing-column > .plan-footer {
+  .agenda-table.style-four .agenda-wrapper > .agenda-column > .plan-footer {
     border-right: none;
     border-left: none;
   }
 }
-.pricing-table.style-four .pricing-wrapper.features {
+.agenda-table.style-four .agenda-wrapper.features {
   box-shadow: none;
 }
-.pricing-table.style-four .pricing-wrapper.features > .pricing-column > .item-list {
+.agenda-table.style-four .agenda-wrapper.features > .agenda-column > .item-list {
   border-top: 3px solid #1abc9c;
   margin-top: 287px;
   box-shadow: 0 0 13px rgba(0, 0, 0, 0.2);
@@ -1448,32 +1448,32 @@
 
 
 /*---------------------------------------------------------------------*/
-/*  11.5 PRICING TABLES - STYLE FIVE
+/*  11.5 agenda TABLES - STYLE FIVE
 /*---------------------------------------------------------------------*/
-.pricing-table.style-five .pricing-wrapper > .pricing-column {
+.agenda-table.style-five .agenda-wrapper > .agenda-column {
   border-top: 6px solid #1abc9c;
 }
-.pricing-table.style-five .pricing-wrapper > .pricing-column > .plan-title > h2 {
-  background-color: #1d1d1d;
+.agenda-table.style-five .agenda-wrapper > .agenda-column > .plan-title > h2 {
+  background-color: #00a8cb;
 }
-.pricing-table.style-five .pricing-wrapper > .pricing-column > .plan-title > .pricing-box {
+.agenda-table.style-five .agenda-wrapper > .agenda-column > .plan-title > .agenda-box {
   height: auto;
   padding: 0px 15px 25px 15px;
 }
-.pricing-table.style-five .pricing-wrapper > .pricing-column > .item-list {
+.agenda-table.style-five .agenda-wrapper > .agenda-column > .item-list {
   background-color: #f9f9f9;
 }
-.pricing-table.style-five .pricing-wrapper > .pricing-column > .item-list > li:nth-child(odd) {
+.agenda-table.style-five .agenda-wrapper > .agenda-column > .item-list > li:nth-child(odd) {
   background-color: #e5e5e5;
 }
-.pricing-table.style-five .pricing-wrapper > .pricing-column > .plan-footer {
+.agenda-table.style-five .agenda-wrapper > .agenda-column > .plan-footer {
   padding: 0px;
   background-color: #1abc9c;
   border-right: 1px solid #19b395;
   border-bottom: 1px solid #19b395;
   border-left: 1px solid #19b395;
 }
-.pricing-table.style-five .pricing-wrapper > .pricing-column > .plan-footer a.btn {
+.agenda-table.style-five .agenda-wrapper > .agenda-column > .plan-footer a.btn {
   width: 100%;
   padding-top: 18px;
   padding-bottom: 18px;
@@ -1482,37 +1482,37 @@
 
 
 /*---------------------------------------------------------------------*/
-/*  11.6 PRICING TABLES - STYLE SIX
+/*  11.6 agenda TABLES - STYLE SIX
 /*---------------------------------------------------------------------*/
 @media (min-width: 768px) {
-  .pricing-table.style-six .pricing-wrapper {
+  .agenda-table.style-six .agenda-wrapper {
     padding: 0px;
     box-shadow: 0 0 13px rgba(0, 0, 0, 0.2);
   }
 }
-.pricing-table.style-six .pricing-wrapper > .pricing-column {
+.agenda-table.style-six .agenda-wrapper > .agenda-column {
   border-top: 6px solid #1abc9c;
 }
-.pricing-table.style-six .pricing-wrapper > .pricing-column > .plan-title > h2 {
-  background-color: #1d1d1d;
+.agenda-table.style-six .agenda-wrapper > .agenda-column > .plan-title > h2 {
+  background-color: #00a8cb;
 }
-.pricing-table.style-six .pricing-wrapper > .pricing-column > .plan-title > .pricing-box {
+.agenda-table.style-six .agenda-wrapper > .agenda-column > .plan-title > .agenda-box {
   height: auto;
   padding: 0px 15px 25px 15px;
 }
-.pricing-table.style-six .pricing-wrapper > .pricing-column > .item-list {
+.agenda-table.style-six .agenda-wrapper > .agenda-column > .item-list {
   background-color: #f9f9f9;
 }
 @media (min-width: 768px) {
-  .pricing-table.style-six .pricing-wrapper > .pricing-column > .item-list > li {
+  .agenda-table.style-six .agenda-wrapper > .agenda-column > .item-list > li {
     border-right: none;
     border-left: none;
   }
 }
-.pricing-table.style-six .pricing-wrapper > .pricing-column > .item-list > li:nth-child(odd) {
+.agenda-table.style-six .agenda-wrapper > .agenda-column > .item-list > li:nth-child(odd) {
   background-color: #e5e5e5;
 }
-.pricing-table.style-six .pricing-wrapper > .pricing-column > .plan-footer {
+.agenda-table.style-six .agenda-wrapper > .agenda-column > .plan-footer {
   padding: 0px;
   background-color: #1abc9c;
   border-right: 1px solid #19b395;
@@ -1520,12 +1520,12 @@
   border-left: 1px solid #19b395;
 }
 @media (min-width: 768px) {
-  .pricing-table.style-six .pricing-wrapper > .pricing-column > .plan-footer {
+  .agenda-table.style-six .agenda-wrapper > .agenda-column > .plan-footer {
     border-right: none;
     border-left: none;
   }
 }
-.pricing-table.style-six .pricing-wrapper > .pricing-column > .plan-footer a.btn {
+.agenda-table.style-six .agenda-wrapper > .agenda-column > .plan-footer a.btn {
   width: 100%;
   padding-top: 18px;
   padding-bottom: 18px;

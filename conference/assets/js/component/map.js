@@ -32,8 +32,8 @@ $(function(){
             mapTypeControl: false,
             streetViewControl: true,
             mapTypeId: google.maps.MapTypeId.ROADMAP,
-            scrollwheel: false
-            //styles: undefined style
+            scrollwheel: false,
+            styles: style
         };
         
         // inizialize the map
@@ -43,8 +43,8 @@ $(function(){
         var marker = new google.maps.Marker({
             position: new google.maps.LatLng($latitude, $longitude),
             map: map,
-            visible: true
-            //icon: undefined $marker_url
+            visible: true,
+            icon: $marker_url
         });
     });
 });

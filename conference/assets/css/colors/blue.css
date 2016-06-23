@@ -20,23 +20,23 @@
 /*  1. NAVBAR
 /*---------------------------------------------------------------------*/
 .navbar.navbar-fixed-top .navbar-toggle {
-  background-color: #3996cc;
+  background-color: #00a8cb;
 }
 .navbar.navbar-fixed-top .navbar-nav > li > a:hover {
-  color: #3996cc;
+  color: #00a8cb;
 }
 .navbar.navbar-fixed-top .navbar-nav > li.active a,
 .navbar.navbar-fixed-top .navbar-nav > li.active a:hover {
-  background-color: #3996cc;
+  background-color: #00a8cb;
 }
 @media (min-width: 992px) {
   .navbar.navbar-fixed-top .navbar-nav > li.active a,
   .navbar.navbar-fixed-top .navbar-nav > li.active a:hover {
-    background-color: #3996cc;
+    background-color: #00a8cb;
   }
 }
 .navbar-trigger-open a {
-  background-color: #3996cc;
+  background-color: #00a8cb;
 }
 
 
@@ -44,10 +44,10 @@
 /*  2. QUOTE SECTION
 /*---------------------------------------------------------------------*/
 #quote > .section-inner > .section-content .quote-text > .quote-icon > i {
-  color: #3996cc;
+  color: #00a8cb;
 }
 #quote > .section-inner > .section-content .quote-text > h2.quote-by {
-  color: #3996cc;
+  color: #00a8cb;
 }
 
 
@@ -55,10 +55,10 @@
 /*  3. KEEP IN TOUCH SECTION
 /*---------------------------------------------------------------------*/
 #keep-in-touch .social-icon-item > a:hover {
-  color: #3996cc;
+  color: #00a8cb;
 }
 #keep-in-touch .social-icon-item > a:hover .social-icon > i {
-  color: #3996cc;
+  color: #00a8cb;
 }
 
 
@@ -66,18 +66,18 @@
 /*  4. CONTACT US SECTION
 /*---------------------------------------------------------------------*/
 #contact-us > .section-inner > .section-content .content-message {
-  background-color: #3996cc;
+  background-color: #00a8cb;
 }
 #contact-us > .section-inner > .section-content .form-group input,
 #contact-us > .section-inner > .section-content .form-group textarea {
-  border-left-color: #3996cc;
+  border-left-color: #00a8cb;
 }
 #contact-us > .section-inner > .section-content .form-group span {
-  background-color: #3996cc;
-  border-color: #3996cc;
+  background-color: #00a8cb;
+  border-color: #00a8cb;
 }
 #contact-us > .section-inner > .section-content .social-icon-text > h2 {
-  background-color: #3996cc;
+  background-color: #00a8cb;
   border: 1px solid #2b79a7;
 }
 
@@ -86,5 +86,5 @@
 /*  5. FOOTER
 /*---------------------------------------------------------------------*/
 footer.footer {
-  border-top: 2px solid #3996cc;
+  border-top: 2px solid #00a8cb;
 }
