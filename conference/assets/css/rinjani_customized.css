@@ -4,12 +4,13 @@
 	width:60%;
 }
 
-.navbar{
-	color: #00a8cb
-}
-
-.vcenter{
+.navbar-brand>img.vcenter{
 	display: inline-block;
     vertical-align: middle;
-    float: none;
+	margin-bottom: 6px;
+}
+
+.agenda-table{
+	margin-left: auto;
+	margin-right: auto;
 }
