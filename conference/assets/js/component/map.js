@@ -31,7 +31,6 @@ $(function(){
             zoomControl: true,
             mapTypeControl: false,
             streetViewControl: true,
-            mapTypeId: google.maps.MapTypeId.ROADMAP,
             scrollwheel: false,
             styles: style
         };
@@ -42,9 +41,9 @@ $(function(){
         //add a custom marker to the map				
         var marker = new google.maps.Marker({
             position: new google.maps.LatLng($latitude, $longitude),
+            animation:google.maps.Animation.BOUNCE,
             map: map,
-            visible: true,
-            icon: $marker_url
+            visible: true
         });
     });
 });

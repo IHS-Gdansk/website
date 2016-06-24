@@ -27,12 +27,12 @@
 }
 .navbar.navbar-fixed-top .navbar-nav > li.active a,
 .navbar.navbar-fixed-top .navbar-nav > li.active a:hover {
-  background-color: #00a8cb;
+  background-color: #222;
 }
 @media (min-width: 992px) {
   .navbar.navbar-fixed-top .navbar-nav > li.active a,
   .navbar.navbar-fixed-top .navbar-nav > li.active a:hover {
-    background-color: #00a8cb;
+      background-color: #222;
   }
 }
 .navbar-trigger-open a {

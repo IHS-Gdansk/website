@@ -71,6 +71,11 @@ $(function(){
                     } , itemsDelay * (i * 2));
                 }
             });
+            element.hover(function(item){
+                element.animate({
+                    'min-height': element.find('.team-detail').height()
+                });
+            });
         });
         
         

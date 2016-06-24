@@ -474,19 +474,19 @@
 .counter-item > .inner-content {
   padding-top: 10px;
 }
-.counter-item > .inner-content .number {
+.counter-item > .inner-content .number, .counter-item > .inner-content .text {
   color: #fff;
   font-size: 24px;
   font-weight: 300;
   text-transform: uppercase;
 }
 @media (min-width: 480px) {
-  .counter-item > .inner-content .number {
+  .counter-item > .inner-content .number, .counter-item > .inner-content .text {
     font-size: 50px;
   }
 }
 @media (min-width: 768px) {
-  .counter-item > .inner-content .number {
+  .counter-item > .inner-content .number, .counter-item > .inner-content .text {
     font-size: 60px;
   }
 }
