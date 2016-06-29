@@ -442,13 +442,13 @@
     font-size: 60px;
   }
 }
-.countdown .cd-content .cd-element > .cd-label {
+.countdown .cd-content .cd-element > .cd-label, .countdown > .cd-label {
   color: #b7ada4;
   font-size: 20px;
   font-weight: 300;
 }
 @media (min-width: 360px) {
-  .countdown .cd-content .cd-element > .cd-label {
+  .countdown .cd-content .cd-element > .cd-label, .countdown > .cd-label  {
     font-size: 30px;
   }
 }
