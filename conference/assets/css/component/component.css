@@ -434,22 +434,32 @@
 }
 .countdown .cd-content .cd-element > .cd-value {
   color: #1abc9c;
-  font-size: 40px;
-  font-weight: 300;
-}
-@media (min-width: 360px) {
-  .countdown .cd-content .cd-element > .cd-value {
-    font-size: 60px;
-  }
-}
-.countdown .cd-content .cd-element > .cd-label, .countdown > .cd-label {
-  color: #b7ada4;
   font-size: 20px;
   font-weight: 300;
 }
 @media (min-width: 360px) {
-  .countdown .cd-content .cd-element > .cd-label, .countdown > .cd-label  {
+  .countdown .cd-content .cd-element > .cd-value {
     font-size: 30px;
+  }
+}
+.countdown .cd-content .cd-element > .cd-label {
+  color: #b7ada4;
+  font-size: 15px;
+  font-weight: 300;
+}
+.countdown > .cd-label {
+  color: #b7ada4;
+  font-size: 30px;
+  font-weight: 900;
+}
+@media (min-width: 360px) {
+  .countdown .cd-content .cd-element > .cd-label {
+    font-size: 20px;
+  }
+}
+@media (min-width: 360px) {
+  .countdown > .cd-label  {
+    font-size: 45px;
   }
 }
 
