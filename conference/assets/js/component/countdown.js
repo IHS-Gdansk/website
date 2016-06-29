@@ -3,7 +3,8 @@ $(function(){
         year = $(element).data('year'),
         month = $(element).data('month'),
         day = $(element).data('day'),
-        newDate = new Date(year, month - 1, day);
+        hour = $(element).data('hour')
+        newDate = new Date(Date.UTC(year, month - 1, day, hour - 2));
 
     $(element).countdown({ 
         until: newDate,
