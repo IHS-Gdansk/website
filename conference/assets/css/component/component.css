@@ -428,6 +428,18 @@
 /*---------------------------------------------------------------------*/
 /*  5. COUNTDOWN
 /*---------------------------------------------------------------------*/
+.countdown > .cd-label {
+  color: #00a8cb;
+  font-size: 30px;
+  font-weight: 300;
+}
+
+@media (min-width: 360px) {
+  .countdown > .cd-label  {
+    font-size: 55px;
+  }
+}
+
 .countdown .cd-content .cd-element {
   border-bottom: 1px solid #1abc9c;
   padding-bottom: 15px;
@@ -442,13 +454,13 @@
     font-size: 60px;
   }
 }
-.countdown .cd-content .cd-element > .cd-label, .countdown > .cd-label {
+.countdown .cd-content .cd-element > .cd-label {
   color: #b7ada4;
   font-size: 20px;
   font-weight: 300;
 }
 @media (min-width: 360px) {
-  .countdown .cd-content .cd-element > .cd-label, .countdown > .cd-label  {
+  .countdown .cd-content .cd-element > .cd-label {
     font-size: 30px;
   }
 }
