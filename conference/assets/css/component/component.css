@@ -428,38 +428,40 @@
 /*---------------------------------------------------------------------*/
 /*  5. COUNTDOWN
 /*---------------------------------------------------------------------*/
+.countdown > .cd-label {
+  color: #00a8cb;
+  font-size: 30px;
+  font-weight: 300;
+}
+
+@media (min-width: 360px) {
+  .countdown > .cd-label  {
+    font-size: 55px;
+  }
+}
+
 .countdown .cd-content .cd-element {
   border-bottom: 1px solid #1abc9c;
   padding-bottom: 15px;
 }
 .countdown .cd-content .cd-element > .cd-value {
   color: #1abc9c;
-  font-size: 20px;
+  font-size: 40px;
   font-weight: 300;
 }
 @media (min-width: 360px) {
   .countdown .cd-content .cd-element > .cd-value {
-    font-size: 30px;
+    font-size: 60px;
   }
 }
 .countdown .cd-content .cd-element > .cd-label {
   color: #b7ada4;
-  font-size: 15px;
+  font-size: 20px;
   font-weight: 300;
-}
-.countdown > .cd-label {
-  color: #b7ada4;
-  font-size: 30px;
-  font-weight: 900;
 }
 @media (min-width: 360px) {
   .countdown .cd-content .cd-element > .cd-label {
-    font-size: 20px;
-  }
-}
-@media (min-width: 360px) {
-  .countdown > .cd-label  {
-    font-size: 45px;
+    font-size: 30px;
   }
 }
 
