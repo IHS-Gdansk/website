@@ -1039,13 +1039,11 @@ span.navbar-trigger-close a:hover {
 }
 
 #map.section > .section-inner .section-content {
-  padding-top: 0;
   padding-bottom: 0;
 }
 
 @media (min-width: 1024px) {
   #map.section > .section-inner .section-content {
-    padding-top: 0;
     padding-bottom: 0;
   }
 }
