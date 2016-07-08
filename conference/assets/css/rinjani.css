@@ -1038,6 +1038,28 @@ span.navbar-trigger-close a:hover {
   transition: all ease 0.55s;
 }
 
+#map.section > .section-inner .section-content {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+@media (min-width: 1024px) {
+  #map.section > .section-inner .section-content {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+}
+
+#map.section > .section-inner .section-content .section-title {
+  color: #222;
+  text-transform: uppercase;
+  padding-bottom: 40px;
+}
+@media (min-width: 1024px) {
+  #map.section > .section-inner .section-content .section-title {
+    padding-bottom: 40px;
+  }
+}
 
 /*---------------------------------------------------------------------*/
 /*  16. FOOTER
