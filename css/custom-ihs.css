@@ -5,7 +5,7 @@
 /*______________________________________________________________*/
 /****************** SECTIONS */
 .blue-section {
-  background: #00a9cb;
+  background: #08ac4b;
   color: #fff; }
   .blue-section h1, .blue-section h2, .blue-section h3, .blue-section h4 {
     color: #fff; }
@@ -76,7 +76,7 @@
     background: none;
     color: #272727; }
 .custom-tabs .nav-tabs > li.active {
-  border-bottom: 3px solid #00a9cb; }
+  border-bottom: 3px solid #08ac4b; }
   .custom-tabs .nav-tabs > li.active > a {
     margin-top: 0;
     border: none;
@@ -106,13 +106,13 @@
     width: 80px;
     height: 80px;
     line-height: 80px;
-    border: 2px solid #00a9cb;
+    border: 2px solid #08ac4b;
     border-radius: 100px;
     position: relative; }
     #proces .icon-circle > span {
       border-style: solid;
       border-width: 2px;
-      border-color: #00a9cb;
+      border-color: #08ac4b;
       border-radius: 50%;
       background-color: #fff;
       position: absolute;
@@ -128,7 +128,7 @@
     min-height: 20px;
     padding: 10px 20px; }
     #proces .well h3 {
-      color: #00a9cb; }
+      color: #08ac4b; }
 
 /*______________________________________________________________*/
 /****************** LUDZIE */
@@ -148,9 +148,9 @@
         color: #999;
         display: block; }
     #ludzie .team-member:hover {
-      border-color: #00a9cb; }
+      border-color: #08ac4b; }
       #ludzie .team-member:hover .social-icons > li > a {
-        background: #00a9cb; }
+        background: #08ac4b; }
   #ludzie .social-icons {
     list-style: none;
     padding: 0;
@@ -203,7 +203,7 @@
   .customNavigation .btn {
     position: absolute;
     top: 50%;
-    background-color: #00a9cb;
+    background-color: #08ac4b;
     color: #fff;
     font-size: 35px;
     display: inline-block;
@@ -283,7 +283,7 @@
 /****************** KONTAKT */
 #kontakt {
   padding: 100px 0 50px;
-  background: #00a9cb;
+  background: #08ac4b;
   color: #fff; }
   #kontakt h1, #kontakt h2 {
     color: #fff; }
