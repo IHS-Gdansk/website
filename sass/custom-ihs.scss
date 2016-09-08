@@ -2,7 +2,7 @@
 /*______________________________________________________________*/
 /****************** MIXINS */
 
-$blue_color: #00a9cb;
+$greenIHSmarkit_color: #08ac4b;
 $orange_color: #f7941d;
 $green_color: #96bc33;
 $red_color: #f04e23;
@@ -30,7 +30,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
 
 
 .blue-section {
-	background: $blue_color;
+	background: $greenIHSmarkit_color;
     color: #fff;
       h1, h2, h3, h4 {
     color: #fff;
@@ -139,7 +139,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
               color: #272727;
             }
           }
-          border-bottom: 3px solid $blue_color;
+          border-bottom: 3px solid $greenIHSmarkit_color;
         }
       }
     }
@@ -167,14 +167,14 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
     width: 80px;
     height: 80px;
     line-height: 80px;
-    border: 2px solid $blue_color;
+    border: 2px solid $greenIHSmarkit_color;
     border-radius: 100px;
     position: relative;
 
     >span {
       border-style: solid;
       border-width: 2px;
-      border-color: $blue_color;
+      border-color: $greenIHSmarkit_color;
       border-radius: 50%;
       background-color: #fff;
       position: absolute;
@@ -222,9 +222,9 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
     }
 
     &:hover {
-      border-color: $blue_color;
+      border-color: $greenIHSmarkit_color;
       .social-icons>li>a {
-        background: $blue_color;
+        background: $greenIHSmarkit_color;
       }
     }
   }
@@ -299,7 +299,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
   .btn {
     position: absolute;
     top: 50%;
-    background-color: $blue_color;
+    background-color: $greenIHSmarkit_color;
     color: #fff;
     font-size: 35px;
     display: inline-block;
@@ -411,7 +411,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
 
 #kontakt {
     padding: 100px 0 50px;
-    background: $blue_color;
+    background: $greenIHSmarkit_color;
     color: #fff;
       h1,h2 {
         color: #fff;
