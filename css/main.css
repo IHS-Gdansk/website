@@ -28,7 +28,7 @@ h6 {
   color: #272727;
 }
 a {
-  color: #08ac4b;
+  color: #00b140;
   -webkit-transition: color 400ms, background-color 400ms;
   -moz-transition: color 400ms, background-color 400ms;
   -o-transition: color 400ms, background-color 400ms;
@@ -39,7 +39,7 @@ a {
 a:hover,
 a:focus {
   text-decoration: none;
-  color: #05632b;
+  color: #006524;
   outline: none;
 }
 hr {
@@ -47,16 +47,16 @@ hr {
   border-bottom: 1px solid #fff;
 }
 .gradiant {
-  background-image: linear-gradient(90deg, #08ac69 0%, #08ac19 100%);
-  background-image: -moz-linear-gradient(90deg, #08ac69 0%, #08ac19 100%);
-  background-image: -webkit-linear-gradient(90deg, #08ac69 0%, #08ac19 100%);
-  background-image: -ms-linear-gradient(90deg, #08ac69 0%, #08ac19 100%);
+  background-image: linear-gradient(90deg, #00b140 0%, #00b140 100%);
+  background-image: -moz-linear-gradient(90deg, #00b140 0%, #00b140 100%);
+  background-image: -webkit-linear-gradient(90deg, #00b140 0%, #00b140 100%);
+  background-image: -ms-linear-gradient(90deg, #00b140 0%, #00b140 100%);
 }
 .gradiant-horizontal {
-  background-image: linear-gradient(4deg, #08ac69 0%, #08ac19 100%);
-  background-image: -moz-linear-gradient(4deg, #08ac69 0%, #08ac19 100%);
-  background-image: -webkit-linear-gradient(4deg, #08ac69 0%, #08ac19 100%);
-  background-image: -ms-linear-gradient(4deg, #08ac69 0%, #08ac19 100%);
+  background-image: linear-gradient(4deg, #00b140 0%, #00b140 100%);
+  background-image: -moz-linear-gradient(4deg, #00b140 0%, #00b140 100%);
+  background-image: -webkit-linear-gradient(4deg, #00b140 0%, #00b140 100%);
+  background-image: -ms-linear-gradient(4deg, #00b140 0%, #00b140 100%);
 }
 .section-header {
   margin-bottom: 50px;
@@ -89,18 +89,18 @@ hr {
   margin-left: -12px;
   border: 5px solid #fff;
   border-radius: 20px;
-  background: #08ac4b;
+  background: #00b140;
 }
 .btn {
   border: none;
   border-radius: 0;
 }
 .btn.btn-primary {
-  background: #08ac4b;
+  background: #00b140;
 }
 .btn.btn-primary:hover,
 .btn.btn-primary:focus {
-  background: #05632b;
+  background: #006524;
 }
 .btn.btn-lg {
   text-transform: uppercase;
@@ -120,7 +120,7 @@ hr {
   bottom: -1px;
   left: 0;
   width: 40%;
-  border-bottom: 1px solid #08ac4b;
+  border-bottom: 1px solid #00b140;
 }
 ul.nostyle {
   list-style: none;
@@ -128,7 +128,7 @@ ul.nostyle {
   margin-bottom: 20px;
 }
 ul.nostyle i {
-  color: #08ac4b;
+  color: #00b140;
 }
 .scaleIn {
   -webkit-animation-name: scaleIn;
@@ -209,7 +209,7 @@ ul.nostyle i {
   #main-menu.navbar-default .navbar-nav > li:hover > a {
     background: transparent;
     padding-top: 37px;
-    border-top: 3px solid #08ac4b;
+    border-top: 3px solid #00b140;
     color: black;
   }
   #main-menu.navbar-default .dropdown-menu {
@@ -240,12 +240,12 @@ ul.nostyle i {
   #main-menu.navbar-default .dropdown-menu > li.active,
   #main-menu.navbar-default .dropdown-menu > li.open,
   #main-menu.navbar-default .dropdown-menu > li:hover {
-    border-left-color: #08ac4b;
+    border-left-color: #00b140;
   }
   #main-menu.navbar-default .dropdown-menu > li.active > a,
   #main-menu.navbar-default .dropdown-menu > li.open > a,
   #main-menu.navbar-default .dropdown-menu > li:hover > a {
-    color: #08ac4b;
+    color: #00b140;
     background-color: transparent;
   }
 }
@@ -274,7 +274,7 @@ ul.nostyle i {
   color: #fff;
 }
 #main-slider .slider-inner h2 > span {
-  color: #08ac4b;
+  color: #00b140;
 }
 #main-slider .slider-inner .btn {
   margin-top: 10px;
@@ -299,7 +299,7 @@ ul.nostyle i {
 }
 #main-slider .owl-prev:hover,
 #main-slider .owl-next:hover {
-  background-color: #08ac4b;
+  background-color: #00b140;
 }
 #main-slider .owl-prev {
   left: -35px;
@@ -313,7 +313,7 @@ ul.nostyle i {
   width: 0%;
   max-width: 100%;
   height: 4px;
-  background: #08ac4b;
+  background: #00b140;
 }
 #progressBar {
   margin-top: -4px;
@@ -335,7 +335,7 @@ ul.nostyle i {
   text-align: center;
   width: 64px;
   border-radius: 100%;
-  color: #08ac4b;
+  color: #00b140;
   box-shadow: inset 0 0 0 1px #d7d7d7;
   -webkit-box-shadow: inset 0 0 0 1px #d7d7d7;
   transition: background-color 400ms, background-color 400ms;
@@ -351,13 +351,13 @@ ul.nostyle i {
   right: -10px;
   border: 4px solid #fff;
   border-radius: 20px;
-  background: #08ac4b;
+  background: #00b140;
 }
 .media.service-box:hover .pull-left > i {
-  background-image: linear-gradient(90deg, #08ac69 0%, #08ac19 100%);
-  background-image: -moz-linear-gradient(90deg, #08ac69 0%, #08ac19 100%);
-  background-image: -webkit-linear-gradient(90deg, #08ac69 0%, #08ac19 100%);
-  background-image: -ms-linear-gradient(90deg, #08ac69 0%, #08ac19 100%);
+  background-image: linear-gradient(90deg, #00b140 0%, #00b140 100%);
+  background-image: -moz-linear-gradient(90deg, #00b140 0%, #00b140 100%);
+  background-image: -webkit-linear-gradient(90deg, #00b140 0%, #00b140 100%);
+  background-image: -ms-linear-gradient(90deg, #00b140 0%, #00b140 100%);
   color: #fff;
   box-shadow: inset 0 0 0 5px rgba(255, 255, 255, 0.8);
   -webkit-box-shadow: inset 0 0 0 5px rgba(255, 255, 255, 0.8);
@@ -375,7 +375,7 @@ ul.nostyle i {
   text-align: center;
   width: 64px;
   border-radius: 100%;
-  color: #08ac4b;
+  color: #00b140;
   box-shadow: inset 0 0 0 1px #d7d7d7;
   -webkit-box-shadow: inset 0 0 0 1px #d7d7d7;
   transition: background-color 400ms, background-color 400ms;
@@ -391,7 +391,7 @@ ul.nostyle i {
   right: -10px;
   border: 4px solid #fff;
   border-radius: 20px;
-  background: #08ac4b;
+  background: #00b140;
 }
 .divider {
   margin-top: 50px;
@@ -408,10 +408,10 @@ ul.nostyle i {
   background: #eeeeee;
 }
 .progress .progress-bar.progress-bar-primary {
-  background-image: linear-gradient(4deg, #08ac69 0%, #08ac19 100%);
-  background-image: -moz-linear-gradient(4deg, #08ac69 0%, #08ac19 100%);
-  background-image: -webkit-linear-gradient(4deg, #08ac69 0%, #08ac19 100%);
-  background-image: -ms-linear-gradient(4deg, #08ac69 0%, #08ac19 100%);
+  background-image: linear-gradient(4deg, #00b140 0%, #00b140 100%);
+  background-image: -moz-linear-gradient(4deg, #00b140 0%, #00b140 100%);
+  background-image: -webkit-linear-gradient(4deg, #00b140 0%, #00b140 100%);
+  background-image: -ms-linear-gradient(4deg, #00b140 0%, #00b140 100%);
   -webkit-box-shadow: none;
   box-shadow: none;
 }
@@ -425,7 +425,7 @@ ul.nostyle i {
 }
 .nav.main-tab > li.active > a {
   background: #222534;
-  color: #08ac4b;
+  color: #00b140;
 }
 .nav.main-tab > li:first-child > a {
   border-radius: 3px 0 0 0;
@@ -484,7 +484,7 @@ ul.nostyle i {
   height: 140px;
   font-size: 28px;
   line-height: 140px;
-  border: 3px solid #08ac4b;
+  border: 3px solid #00b140;
   border-radius: 100px;
   margin-bottom: 20px;
 }
@@ -501,7 +501,7 @@ ul.nostyle i {
   color: #fff;
 }
 #footer a:hover {
-  color: #08ac4b;
+  color: #00b140;
 }
 #footer ul {
   list-style: none;
@@ -522,7 +522,7 @@ ul.nostyle i {
   -webkit-box-shadow: none;
 }
 .carousel-content {
-  text-shadow: 1px 1px 5px #011a0b, -1px -1px 5px #011a0b, -1px 1px 5px #011a0b, 1px -1px 5px #011a0b;
+  text-shadow: 1px 1px 5px #001809, -1px -1px 5px #001809, -1px 1px 5px #001809, 1px -1px 5px #001809;
   font-size: 17px;
   font-weight: normal;
   color: #fff;
