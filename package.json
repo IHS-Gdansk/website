@@ -1,0 +1,26 @@
+{
+  "name": "ihs-gdansk-website",
+  "version": "1.0.0",
+  "description": "Strona internetowa gdańskiego oddziału firmy IHS.",
+  "scripts": {
+    "live": "live-server --mount=/:. --port=${PORT:-3000}"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/IHS-Gdansk/website.git"
+  },
+  "keywords": [
+    "ihs",
+    "markit",
+    "jobs"
+  ],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/IHS-Gdansk/website/issues"
+  },
+  "homepage": "https://github.com/IHS-Gdansk/website#readme",
+  "devDependencies": {
+    "live-server": "^1.2.0"
+  }
+}
