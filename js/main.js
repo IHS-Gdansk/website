@@ -108,8 +108,8 @@ jQuery(function($) {'use strict';
     });
 
 
-    var owlAktualnosci = $("#owl-aktualnosci");
-    owlAktualnosci.owlCarousel({
+    var owlWydarzenia = $("#owl-wydarzenia");
+    owlWydarzenia.owlCarousel({
         items : 3, //10 items above 1400px browser width
         itemsDesktop : [1400,3], //3 items between 1400px and 1001px
         itemsDesktopMedium : [1000,2], //2 items between 1000px and 901px
@@ -119,11 +119,11 @@ jQuery(function($) {'use strict';
     });
 
     // Custom Navigation Events
-    $(".aktualnosci-next").click(function(){
-      owlAktualnosci.trigger('owl.next');
+    $(".wydarzenia-next").click(function(){
+      owlWydarzenia.trigger('owl.next');
     });
-    $(".aktualnosci-prev").click(function(){
-      owlAktualnosci.trigger('owl.prev');
+    $(".wydarzenia-prev").click(function(){
+      owlWydarzenia.trigger('owl.prev');
     });
 
     $('.jumbotron h1')
