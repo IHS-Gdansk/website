@@ -64,7 +64,7 @@ let event (id, markdown : MarkdownDocument) =
 
   let thumbnail = 
     match content with
-    | Regex """<img src="(.*?)" """ [src] -> src
+    | Regex "<img src=\"(.*?)\"" [src] -> src
     | _ -> failwithf "cannot find any image in '%s'" id
 
   {
