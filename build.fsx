@@ -4,6 +4,7 @@
 
 open System
 open System.IO
+open System.Text.RegularExpressions
 
 open Fake
 
@@ -35,8 +36,17 @@ type Website =
 
 let emptyDict = Collections.Generic.Dictionary<_,_>()
 
+let (|Regex|_|) pattern input =
+    let m = Regex.Match(input, pattern)
+    if m.Success then Some(List.tail [ for g in m.Groups -> g.Value ])
+    else None
+
 let writeSpansHtml spans =
   MarkdownDocument([Span spans], emptyDict)
+  |> Markdown.WriteHtml
+
+let writeParasHtml paras =
+  MarkdownDocument(paras,emptyDict)
   |> Markdown.WriteHtml
 
 let event (id, markdown : MarkdownDocument) =
@@ -49,18 +59,21 @@ let event (id, markdown : MarkdownDocument) =
       writeSpansHtml short,
       writeSpansHtml long,
       writeSpansHtml abst,
-      content
+      writeParasHtml content
     | _ -> failwithf "invalid markdown structure in '%s'" id
+
+  let thumbnail = 
+    match content with
+    | Regex """<img src="(.*?)" """ [src] -> src
+    | _ -> failwithf "cannot find any image in '%s'" id
 
   {
     Id = id
     ShortTitle = short
-    Thumbnail = "images/aktualnosci/2017_kolorowy_piornik/Kolorowy_piornik_1500x1000.jpg"
+    Thumbnail = thumbnail
     LongTitle = long
     Abstract = abst
-    Content = """<p>Koniec wakacji zbliża się wielkimi krokami, a wraz z nim początek roku szkolnego. Dla nas to świetna okazja do tego, żeby wspólnie zrobić coś dobrego. Przez ostatnie dwa tygodnie w naszym biurze zrobiło się jeszcze bardziej kolorowo, a to wszystko dzięki akcji  &#8222;Kolorowy piórnik&#8221; i wszystkim kolorowym przyborom szkolnym, które gromadziły się w naszych pokojach. Wspólnymi siłami udało nam się zebrać dość sporą wyprawkę szkolną, która trafiła w ręce Fundacji Hospicyjnej, wspierającej dzieci z osieroconych rodzin. </p> 
-    <img src="images/aktualnosci/2017_kolorowy_piornik/Kolorowy_piornik_01.jpg" class="img-responsive" style="width: 410px; padding-left: 10px; display: inline-block;"> 
-    <img src="images/aktualnosci/2017_kolorowy_piornik/Kolorowy_piornik_02.jpg" class="img-responsive" style="width: 410px; padding-left: 10px; display: inline-block;">"""
+    Content = content
   }
 
 let generate () =
@@ -72,6 +85,7 @@ let generate () =
       Markdown.Parse (File.ReadAllText fi.FullName))
     |> Seq.map event
     |> Seq.toList
+    |> List.rev
   
   let template = File.ReadAllText (content </> "index.cshtml")
   let website = { Title = "IHS Markit"; Events = events }
