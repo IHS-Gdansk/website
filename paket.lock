@@ -1,0 +1,13 @@
+NUGET
+  remote: https://www.nuget.org/api/v2
+    FAKE (4.63.2)
+    FSharp.Compiler.Service (2.0.0.6)
+    FSharp.Formatting (2.14.4)
+      FSharp.Compiler.Service (2.0.0.6)
+      FSharpVSPowerTools.Core (>= 2.3 < 2.4)
+    FSharpVSPowerTools.Core (2.3)
+      FSharp.Compiler.Service (>= 2.0.0.3)
+    Microsoft.AspNet.Razor (2.0.30506) - restriction: && (>= net40) (< net45)
+    RazorEngine (3.10)
+      Microsoft.AspNet.Razor (>= 3.0) - restriction: >= net45
+      Microsoft.AspNet.Razor (2.0.30506) - restriction: && (>= net40) (< net45)
