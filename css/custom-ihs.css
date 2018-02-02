@@ -36,10 +36,10 @@
 /****************** SLIDER */
 #slider {
   width: 100%;
-  background: url(../images/slider/kontemplacja.jpg);
+  background: url(../images/slider/banner.jpg);
   background-size: cover;
   background-repeat: no-repeat;
-  background-position-y: bottom;
+  background-position-y: center;
   height: 500px;
   position: relative; }
   #slider .slider-text {
