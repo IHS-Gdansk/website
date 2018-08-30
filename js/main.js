@@ -150,7 +150,6 @@ jQuery(function($) {'use strict';
     });
 
     //Google Map
-    /*
     var latitude = $('#google-map').data('latitude');
     var longitude = $('#google-map').data('longitude');
     function initialize_map() {
@@ -172,5 +171,4 @@ jQuery(function($) {'use strict';
         });
     }
     google.maps.event.addDomListener(window, 'load', initialize_map);
-    */
 });
